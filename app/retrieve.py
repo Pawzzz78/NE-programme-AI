@@ -227,7 +227,12 @@ def _semantic_ranked(query: str) -> list[tuple[str, float]]:
     emb = load_embeddings()
     if not emb:
         return []
-    qvec = _embed_query(query)
+    try:
+        qvec = _embed_query(query)
+    except Exception as exc:  # noqa: BLE001
+        # Mistral indisponible : on retombe sur la recherche lexicale seule
+        print(f"Embedding de la requête impossible, repli lexical : {exc}")
+        return []
     if qvec is None:
         return []
     sims = emb["vectors"] @ qvec  # vectors are L2-normalized
