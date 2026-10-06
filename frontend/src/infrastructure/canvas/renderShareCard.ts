@@ -137,8 +137,9 @@ function drawFooter(ctx: Ctx, card: ShareCard, siteHost: string) {
   ctx.fillStyle = "rgba(181, 169, 129, 0.45)";
   ctx.fillRect(PAD, baseY - 86, innerWidth, 1.5);
 
-  // Pastille d'appel à l'action
-  const cta = `Posez votre question → ${siteHost}`;
+  // Pastille d'appel à l'action, sans l'adresse (déjà dans le lien court) :
+  // une adresse longue l'élargissait au point de couper le lien
+  const cta = "Posez votre question →";
   ctx.font = font(800, 21);
   const ctaWidth = ctx.measureText(cta).width + 52;
   const ctaX = CARD_WIDTH - PAD - ctaWidth;
