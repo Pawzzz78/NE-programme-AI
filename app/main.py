@@ -199,3 +199,12 @@ def index() -> FileResponse:
         status_code=503,
         detail="Front introuvable. Lancez `cd frontend && npm run build`.",
     )
+
+
+@app.get("/{filename}")
+def public_file(filename: str) -> FileResponse:
+    """Fichiers de frontend/public copiés à la racine du build (favicons…)."""
+    path = (DIST_DIR / filename).resolve()
+    if path.parent != DIST_DIR.resolve() or not path.is_file():
+        raise HTTPException(status_code=404, detail="Introuvable.")
+    return FileResponse(path)
