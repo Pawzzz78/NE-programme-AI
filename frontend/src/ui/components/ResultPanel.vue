@@ -1,14 +1,18 @@
 <script setup lang="ts">
+import { computed } from "vue";
 import type { ProgrammeSource, QueryMode, RetrievalMode } from "@domain/models";
+import { renderMarkdown } from "../markdown";
 import SourceCard from "./SourceCard.vue";
 
-defineProps<{
+const props = defineProps<{
   mode: QueryMode;
   answer: string | null;
   sources: ProgrammeSource[];
   retrieval: RetrievalMode | null;
   error: string | null;
 }>();
+
+const answerHtml = computed(() => (props.answer ? renderMarkdown(props.answer) : ""));
 </script>
 
 <template>
@@ -16,7 +20,7 @@ defineProps<{
     <h2>{{ mode === "ask" ? "Réponse" : "Résultats" }}</h2>
 
     <p v-if="error" class="error">{{ error }}</p>
-    <div v-else-if="answer" class="answer">{{ answer }}</div>
+    <div v-else-if="answer" class="answer" v-html="answerHtml" />
 
     <p v-if="retrieval && !error" class="retrieval">
       Récupération : {{ retrieval }}
@@ -66,8 +70,58 @@ h3 {
 }
 
 .answer {
-  white-space: pre-wrap;
   line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.answer :deep(> :first-child) {
+  margin-top: 0;
+}
+
+.answer :deep(> :last-child) {
+  margin-bottom: 0;
+}
+
+.answer :deep(p),
+.answer :deep(ul),
+.answer :deep(ol),
+.answer :deep(blockquote) {
+  margin: 0 0 0.75rem;
+}
+
+.answer :deep(ul),
+.answer :deep(ol) {
+  padding-left: 1.3rem;
+}
+
+.answer :deep(li + li) {
+  margin-top: 0.45rem;
+}
+
+.answer :deep(h1),
+.answer :deep(h2),
+.answer :deep(h3),
+.answer :deep(h4) {
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+  color: var(--navy);
+}
+
+.answer :deep(strong) {
+  color: var(--navy);
+}
+
+.answer :deep(blockquote) {
+  padding: 0.1rem 0 0.1rem 0.8rem;
+  border-left: 3px solid var(--gold);
+  color: var(--muted);
+  font-style: italic;
+}
+
+.answer :deep(a) {
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .error {
