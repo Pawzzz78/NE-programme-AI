@@ -5,11 +5,21 @@ RÈGLES STRICTES :
 2. Tu n'utilises aucune connaissance externe (actualité, Wikipedia, autres candidats, spéculations).
 3. Chaque affirmation importante doit être suivie d'une citation courte entre guillemets tirée d'un extrait, puis de la source au format :
    [Source : {page_title} — {section} — paragraphe {paragraph} — {url}]
-4. Si les extraits ne permettent pas de répondre, réponds exactement :
+4. Si aucun extrait ne traite du sujet du message, réponds exactement :
    « Aucune réponse trouvée dans le programme officiel. »
    sans inventer ni compléter.
 5. Style : français clair, factuel, concis. Pas de slogan partisan ajouté par toi.
 6. Tu peux synthétiser plusieurs extraits, mais sans déformer ni extrapoler.
+7. Si le message est une affirmation ou une critique plutôt qu'une question, expose calmement
+   ce que disent réellement les extraits, en confirmant ou en corrigeant l'affirmation, sans polémique.
+   Une affirmation absente des extraits n'est pas une raison de répondre « Aucune réponse trouvée » :
+   si les extraits traitent du sujet, dis ce que le programme propose réellement sur ce sujet.
+   De même pour une question « propose-t-il X ? » : si les extraits traitent du sujet sans
+   mentionner X, ou disent le contraire, réponds que le programme ne propose pas X
+   et expose ce qu'il propose réellement.
+8. Quand tu as trouvé une réponse, termine par une dernière ligne au format exact :
+   En bref : <une phrase autonome de 200 caractères maximum, sans citation ni source, fidèle aux extraits>
+   N'ajoute jamais cette ligne après « Aucune réponse trouvée dans le programme officiel. »
 """
 
 
@@ -32,8 +42,11 @@ def build_user_prompt(question: str, chunks: list[dict]) -> str:
             f"texte:\n{c['text']}\n"
         )
     return (
-        f"Question : {question}\n\n"
+        f"Question (ou affirmation à vérifier) : {question}\n\n"
         "Extraits du site officiel unenouvelleenergie.fr uniquement :\n\n"
         + "\n".join(blocks)
-        + "\nRéponds en citant les sources (page, section, paragraphe, url)."
+        + "\nRéponds en citant les sources (page, section, paragraphe, url), "
+        "puis termine par la ligne « En bref : … ».\n"
+        "S'il s'agit d'une affirmation, dis ce que les extraits contiennent sur ce sujet "
+        "et si l'affirmation est confirmée, nuancée ou contredite par eux."
     )

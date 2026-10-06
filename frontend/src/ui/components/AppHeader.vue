@@ -1,9 +1,5 @@
 <script setup lang="ts">
 defineProps<{
-  chunks?: number;
-  pages?: number;
-  embeddingsReady?: boolean;
-  embeddingsCount?: number;
   hasApiKey?: boolean;
   loading?: boolean;
   error?: string | null;
@@ -55,23 +51,9 @@ defineProps<{
           avec citation de la page et du paragraphe.
         </p>
 
-        <p
-          class="status"
-          :class="{ ok: !error && hasApiKey, err: error || !hasApiKey }"
-          aria-live="polite"
-        >
-          <template v-if="loading">Chargement du corpus…</template>
-          <template v-else-if="error">{{ error }}</template>
-          <template v-else>
-            Corpus : {{ chunks ?? 0 }} passages · {{ pages ?? 0 }} pages ·
-            {{
-              embeddingsReady
-                ? `embeddings OK (${embeddingsCount})`
-                : "embeddings absents"
-            }}
-            ·
-            {{ hasApiKey ? "clé Mistral OK" : "clé Mistral manquante (.env)" }}
-          </template>
+        <!-- Affiché seulement en cas de problème -->
+        <p v-if="!loading && (error || !hasApiKey)" class="status err" aria-live="polite">
+          {{ error ?? "Clé Mistral manquante (.env) : le mode « Demander » est indisponible." }}
         </p>
       </div>
     </section>
@@ -244,11 +226,6 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.14);
   font-size: 0.78rem;
   color: rgba(255, 255, 255, 0.78);
-}
-
-.status.ok {
-  border-color: rgba(181, 169, 129, 0.55);
-  color: var(--gold);
 }
 
 .status.err {

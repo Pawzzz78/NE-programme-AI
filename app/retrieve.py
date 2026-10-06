@@ -34,6 +34,9 @@ STOPWORDS = {
     # (« Quel candidat propose… »), elles noient les vrais mots-clés.
     "propose", "proposer", "proposition", "propositions", "candidat", "pense",
     "veut",
+    # Sens de la mesure (hausse / baisse) : c'est le sujet qui doit guider la
+    # recherche ; « augmenter les impôts » attirait sinon « augmenter les salaires ».
+    "augmenter", "augmente", "augmentation", "baisser", "baisse", "hausse",
 }
 
 # Sigles → forme longue. Le texte long est ramené au sigle pour le lexical,

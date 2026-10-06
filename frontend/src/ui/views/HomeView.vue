@@ -17,6 +17,8 @@ const {
   sources,
   retrieval,
   hasResult,
+  found,
+  askedQuestion,
   setMode,
   submit,
 } = useProgrammeQuery();
@@ -27,10 +29,6 @@ const {
     <AppHeader
       :loading="healthLoading"
       :error="healthError"
-      :chunks="health?.chunks"
-      :pages="health?.pages"
-      :embeddings-ready="health?.embeddings.ready"
-      :embeddings-count="health?.embeddings.chunkCount"
       :has-api-key="health?.hasApiKey"
     />
 
@@ -51,6 +49,8 @@ const {
         :sources="sources"
         :retrieval="retrieval"
         :error="error"
+        :found="found"
+        :question="askedQuestion"
       />
     </main>
 

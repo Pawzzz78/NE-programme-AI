@@ -14,6 +14,8 @@ export interface ProgrammeSource {
   scoreLexical: number | null;
   scoreSemantic: number | null;
   retrieval: RetrievalMode | null;
+  /** Lien court du site vers la page source (ex. /s/a3f9c2). */
+  shortPath: string | null;
 }
 
 export interface EmbeddingsHealth {
@@ -42,6 +44,15 @@ export interface ChatResult {
   model: string;
   found: boolean;
   retrieval: RetrievalMode | null;
+}
+
+/** Carte partageable d'une réponse (visuel + texte du post). */
+export interface ShareCard {
+  question: string;
+  headline: string;
+  sourceTitle: string;
+  sourceUrl: string;
+  sourceShortPath: string | null;
 }
 
 export interface SearchResult {

@@ -33,7 +33,7 @@ function onSubmit(e: Event) {
         :value="modelValue"
         :placeholder="
           mode === 'ask'
-            ? 'Ex. Que propose-t-il sur la sécurité ? Sur l’immigration ? Sur l’école ?'
+            ? 'Ex. Que propose-t-il sur la sécurité ? Sur l’école ? Ou collez une critique lue sur X pour vérifier ce que dit le programme.'
             : 'Ex. police municipale, capitalisation retraite, carte scolaire…'
         "
         @input="emit('update:modelValue', ($event.target as HTMLTextAreaElement).value)"

@@ -2,12 +2,14 @@
 
 from __future__ import annotations
 
+import hashlib
 import os
+from functools import lru_cache
 from pathlib import Path
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from mistralai.client import Mistral
 from pydantic import BaseModel, Field
@@ -38,6 +40,7 @@ class SourceOut(BaseModel):
     score_lexical: float | None = None
     score_semantic: float | None = None
     retrieval: str | None = None
+    short_path: str
 
 
 class ChatResponse(BaseModel):
@@ -69,6 +72,19 @@ def _has_api_key() -> bool:
     return bool(key) and not key.startswith("your_")
 
 
+def short_code(url: str) -> str:
+    """Code court stable d'une page source (sans stockage : dérivé de l'URL)."""
+    return hashlib.sha1(url.encode("utf-8")).hexdigest()[:6]
+
+
+@lru_cache(maxsize=1)
+def short_links() -> dict[str, str]:
+    links: dict[str, str] = {}
+    for chunk in load_corpus()["chunks"]:
+        links.setdefault(short_code(chunk["url"]), chunk["url"])
+    return links
+
+
 def to_sources(chunks: list[dict]) -> list[SourceOut]:
     return [
         SourceOut(
@@ -81,6 +97,7 @@ def to_sources(chunks: list[dict]) -> list[SourceOut]:
             score_lexical=c.get("score_lexical"),
             score_semantic=c.get("score_semantic"),
             retrieval=c.get("retrieval"),
+            short_path=f"/s/{short_code(c['url'])}",
         )
         for c in chunks
     ]
@@ -157,6 +174,15 @@ def chat(body: QueryRequest, request: Request) -> ChatResponse:
         found=found,
         retrieval=retrieval,
     )
+
+
+@app.get("/s/{code}")
+def short_link(code: str) -> RedirectResponse:
+    """Lien court affiché sur les visuels partagés → page source officielle."""
+    url = short_links().get(code)
+    if not url:
+        raise HTTPException(status_code=404, detail="Lien inconnu.")
+    return RedirectResponse(url, status_code=302)
 
 
 # --- Front : build Vue (frontend/dist) ---

@@ -12,6 +12,8 @@ export function useProgrammeQuery() {
   const sources = ref<ProgrammeSource[]>([]);
   const retrieval = ref<RetrievalMode | null>(null);
   const hasResult = ref(false);
+  const found = ref(false);
+  const askedQuestion = ref("");
 
   function setMode(next: QueryMode) {
     mode.value = next;
@@ -20,6 +22,7 @@ export function useProgrammeQuery() {
     sources.value = [];
     retrieval.value = null;
     hasResult.value = false;
+    found.value = false;
   }
 
   async function submit() {
@@ -32,6 +35,8 @@ export function useProgrammeQuery() {
     answer.value = null;
     sources.value = [];
     retrieval.value = null;
+    found.value = false;
+    askedQuestion.value = q;
 
     try {
       if (mode.value === "ask") {
@@ -39,6 +44,7 @@ export function useProgrammeQuery() {
         answer.value = result.answer;
         sources.value = result.sources;
         retrieval.value = result.retrieval;
+        found.value = result.found;
       } else {
         const result = await programmeRepository.search(q);
         sources.value = result.results;
@@ -70,6 +76,8 @@ export function useProgrammeQuery() {
     sources,
     retrieval,
     hasResult,
+    found,
+    askedQuestion,
     setMode,
     submit,
   };
