@@ -1,0 +1,13 @@
+.git
+.env
+.venv
+venv
+**/__pycache__
+**/*.pyc
+frontend/node_modules
+frontend/dist
+data/embeddings.npz
+data/embeddings_meta.json
+static
+Dockerfile
+.dockerignore

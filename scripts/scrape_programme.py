@@ -33,6 +33,7 @@ ALLOWED_PREFIXES = (
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "programme.json"
 USER_AGENT = "programme-lisnard-bot/0.1 (+open-source; citation du programme officiel)"
+MAX_ERROR_RATIO = 0.1
 
 
 def norm_space(text: str) -> str:
@@ -86,6 +87,9 @@ SKIP_SECTION_PREFIXES = (
     "les questions qu",
     "chacune a sa page",
     "découvrir",
+    # Listes de liens (navigation), sans contenu programmatique
+    "questions voisines",
+    "les dernières actualités",
 )
 
 
@@ -149,6 +153,7 @@ def main() -> None:
     headers = {"User-Agent": USER_AGENT, "Accept-Language": "fr"}
     all_chunks: list[dict] = []
     pages: list[dict] = []
+    errors = 0
 
     with httpx.Client(headers=headers, follow_redirects=True) as client:
         urls = sitemap_urls(client)
@@ -162,7 +167,15 @@ def main() -> None:
                 print(f"[{i}/{len(urls)}] {len(chunks):3d} chunks  {url}")
             except Exception as exc:  # noqa: BLE001
                 print(f"[{i}/{len(urls)}] ERREUR {url}: {exc}")
+                errors += 1
             time.sleep(0.35)
+
+    # Garde-fou : ne pas écraser le corpus existant par un corpus tronqué
+    if not all_chunks or errors > MAX_ERROR_RATIO * len(urls):
+        raise SystemExit(
+            f"Scrape incomplet ({errors}/{len(urls)} pages en erreur, "
+            f"{len(all_chunks)} chunks) : {OUT} non modifié."
+        )
 
     payload = {
         "source": BASE,

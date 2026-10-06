@@ -6,12 +6,13 @@ import os
 from pathlib import Path
 
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from mistralai.client import Mistral
 from pydantic import BaseModel, Field
 
+from app.limits import CHAT_MAX_TOKENS, check_chat, check_search
 from app.prompts import SYSTEM_PROMPT, build_user_prompt
 from app.retrieve import embeddings_status, load_corpus, search
 
@@ -106,8 +107,9 @@ def health() -> dict:
 
 
 @app.post("/api/search", response_model=SearchResponse)
-def api_search(body: QueryRequest) -> SearchResponse:
+def api_search(body: QueryRequest, request: Request) -> SearchResponse:
     """Recherche dans le programme (sans LLM) — lexical + embeddings si dispo."""
+    check_search(request)
     chunks = search(body.question.strip(), top_k=12)
     retrieval = chunks[0]["retrieval"] if chunks else (
         "hybrid" if embeddings_status()["ready"] and _has_api_key() else "lexical"
@@ -116,7 +118,8 @@ def api_search(body: QueryRequest) -> SearchResponse:
 
 
 @app.post("/api/chat", response_model=ChatResponse)
-def chat(body: QueryRequest) -> ChatResponse:
+def chat(body: QueryRequest, request: Request) -> ChatResponse:
+    check_chat(request)
     question = body.question.strip()
     chunks = search(question, top_k=8)
     model = os.getenv("MISTRAL_MODEL", "mistral-small-latest")
@@ -137,6 +140,7 @@ def chat(body: QueryRequest) -> ChatResponse:
         completion = client.chat.complete(
             model=model,
             temperature=0.1,
+            max_tokens=CHAT_MAX_TOKENS,
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": build_user_prompt(question, chunks)},
