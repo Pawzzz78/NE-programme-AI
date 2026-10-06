@@ -41,7 +41,7 @@ src/
 
 | Couche | Rôle |
 |--------|------|
-| `domain/` | `ProgrammeSource`, `CorpusHealth`, port `ProgrammeRepository` |
-| `application/` | `useHealth`, `useProgrammeQuery` |
-| `infrastructure/` | `HttpProgrammeRepository`, `apiClient` |
+| `domain/` | `ProgrammeSource`, `CorpusHealth`, port `ProgrammeRepository`, règles de la carte partageable (`shareCard.ts`) |
+| `application/` | `useHealth`, `useProgrammeQuery`, `useShareCard` (partage X) |
+| `infrastructure/` | `HttpProgrammeRepository`, `apiClient`, rendu canvas du visuel 1200×675 |
 | `ui/` | pages et composants purement présentationnels |

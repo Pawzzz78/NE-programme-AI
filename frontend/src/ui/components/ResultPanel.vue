@@ -2,6 +2,7 @@
 import { computed } from "vue";
 import type { ProgrammeSource, QueryMode, RetrievalMode } from "@domain/models";
 import { renderMarkdown } from "../markdown";
+import SharePanel from "./SharePanel.vue";
 import SourceCard from "./SourceCard.vue";
 
 const props = defineProps<{
@@ -10,6 +11,8 @@ const props = defineProps<{
   sources: ProgrammeSource[];
   retrieval: RetrievalMode | null;
   error: string | null;
+  found: boolean;
+  question: string;
 }>();
 
 const answerHtml = computed(() => (props.answer ? renderMarkdown(props.answer) : ""));
@@ -26,6 +29,13 @@ const answerHtml = computed(() => (props.answer ? renderMarkdown(props.answer) :
       Récupération : {{ retrieval }}
       <template v-if="mode === 'search'"> · {{ sources.length }} résultat(s)</template>
     </p>
+
+    <SharePanel
+      v-if="mode === 'ask' && found && answer && !error"
+      :question="question"
+      :answer="answer"
+      :sources="sources"
+    />
 
     <template v-if="sources.length">
       <h3>{{ mode === "ask" ? "Passages utilisés" : "Passages trouvés" }}</h3>

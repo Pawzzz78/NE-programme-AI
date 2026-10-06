@@ -18,6 +18,7 @@ interface SourceDto {
   score_lexical?: number | null;
   score_semantic?: number | null;
   retrieval?: string | null;
+  short_path?: string | null;
 }
 
 interface HealthDto {
@@ -63,6 +64,7 @@ function mapSource(dto: SourceDto): ProgrammeSource {
     scoreLexical: dto.score_lexical ?? null,
     scoreSemantic: dto.score_semantic ?? null,
     retrieval: (dto.retrieval as RetrievalMode | null) ?? null,
+    shortPath: dto.short_path ?? null,
   };
 }
 
