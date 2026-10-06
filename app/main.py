@@ -20,7 +20,6 @@ ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / ".env", override=True)
 
 DIST_DIR = ROOT / "frontend" / "dist"
-LEGACY_STATIC = ROOT / "static"
 
 app = FastAPI(title="Programme Lisnard — questions sourcées", version="0.3.0")
 
@@ -160,7 +159,7 @@ def chat(body: QueryRequest, request: Request) -> ChatResponse:
     )
 
 
-# --- Front : build Vue (frontend/dist) ou repli static legacy ---
+# --- Front : build Vue (frontend/dist) ---
 if (DIST_DIR / "assets").exists():
     app.mount("/assets", StaticFiles(directory=DIST_DIR / "assets"), name="assets")
 
@@ -170,14 +169,7 @@ def index() -> FileResponse:
     vue_index = DIST_DIR / "index.html"
     if vue_index.exists():
         return FileResponse(vue_index)
-    legacy = LEGACY_STATIC / "index.html"
-    if legacy.exists():
-        return FileResponse(legacy)
     raise HTTPException(
         status_code=503,
         detail="Front introuvable. Lancez `cd frontend && npm run build`.",
     )
-
-
-if LEGACY_STATIC.exists() and not (DIST_DIR / "index.html").exists():
-    app.mount("/static", StaticFiles(directory=LEGACY_STATIC), name="static")

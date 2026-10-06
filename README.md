@@ -59,12 +59,11 @@ projet/
 ├── app/                 API FastAPI + RAG
 ├── data/                Corpus + embeddings
 ├── scripts/             Scrape + embed
-├── frontend/            UI Vue 3 (clean architecture)
-│   ├── src/domain/
-│   ├── src/application/
-│   ├── src/infrastructure/
-│   └── src/ui/
-└── static/              Ancien front (repli si pas de build)
+└── frontend/            UI Vue 3 (clean architecture)
+    ├── src/domain/
+    ├── src/application/
+    ├── src/infrastructure/
+    └── src/ui/
 ```
 
 Détail du front : voir [`frontend/README.md`](frontend/README.md).
