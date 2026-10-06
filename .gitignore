@@ -9,8 +9,6 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 scripts/_probe_*.py
-data/embeddings.npz
-data/embeddings_meta.json
 frontend/node_modules/
 frontend/dist/
 frontend/*.tsbuildinfo

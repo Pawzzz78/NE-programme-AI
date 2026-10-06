@@ -1,8 +1,8 @@
 {
   "source": "https://www.unenouvelleenergie.fr",
-  "scraped_at": "2026-10-05T13:00:46.561067+00:00",
+  "scraped_at": "2026-10-06T09:39:09.268416+00:00",
   "page_count": 71,
-  "chunk_count": 1074,
+  "chunk_count": 849,
   "pages": [
     {
       "url": "https://www.unenouvelleenergie.fr/notre-programme/securite/",
@@ -61,302 +61,302 @@
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/pouvoir-achat/",
-      "chunks": 10,
+      "chunks": 5,
       "title": "Pouvoir d’achat et fiscalité : les positions de David Lisnard"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/dette/",
-      "chunks": 14,
+      "chunks": 9,
       "title": "Dette et dépense publique : les positions de David Lisnard"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/sante/",
-      "chunks": 10,
+      "chunks": 5,
       "title": "Santé : les positions de David Lisnard"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/retraites/",
-      "chunks": 9,
+      "chunks": 5,
       "title": "Retraites : les positions de David Lisnard"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/securite/",
-      "chunks": 14,
+      "chunks": 9,
       "title": "Sécurité et justice : les positions de David Lisnard"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/immigration/",
-      "chunks": 11,
+      "chunks": 6,
       "title": "Immigration : les positions de David Lisnard"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/decentralisation/",
-      "chunks": 12,
+      "chunks": 7,
       "title": "Décentralisation et normes : les positions de David Lisnard"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/education/",
-      "chunks": 8,
+      "chunks": 3,
       "title": "École : les positions de David Lisnard"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/ecologie/",
-      "chunks": 7,
+      "chunks": 3,
       "title": "Écologie et énergie : les positions de David Lisnard"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/combien-d-adherents-compte-nouvelle-energie/",
-      "chunks": 14,
+      "chunks": 12,
       "title": "Combien d’adhérents compte Nouvelle Énergie, le parti de David Lisnard ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-la-carte-scolaire/",
-      "chunks": 12,
+      "chunks": 9,
       "title": "Quel candidat veut supprimer la carte scolaire ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-la-retraite-par-capitalisation/",
-      "chunks": 14,
+      "chunks": 10,
       "title": "Quel candidat propose la retraite par capitalisation ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-baisser-les-impots/",
-      "chunks": 13,
+      "chunks": 9,
       "title": "Quel candidat veut baisser les impôts ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-ameliorer-le-pouvoir-d-achat/",
-      "chunks": 14,
+      "chunks": 11,
       "title": "Quel candidat veut améliorer le pouvoir d’achat ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/ou-trouver-le-programme-de-david-lisnard/",
-      "chunks": 11,
+      "chunks": 9,
       "title": "Où trouver le programme de David Lisnard ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-un-referendum-sur-l-immigration/",
-      "chunks": 11,
+      "chunks": 8,
       "title": "Quel candidat propose un référendum sur l’immigration ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-rendre-les-parents-responsables-des-delits-de-leurs-enfants/",
-      "chunks": 11,
+      "chunks": 8,
       "title": "Quel candidat veut rendre les parents responsables des délits de leurs enfants ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-retablir-la-responsabilite-des-magistrats/",
-      "chunks": 10,
+      "chunks": 7,
       "title": "Quel candidat propose de rétablir la responsabilité des magistrats ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-que-les-peines-soient-reellement-executees/",
-      "chunks": 10,
+      "chunks": 7,
       "title": "Quel candidat veut que les peines soient réellement exécutées ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-remplacer-les-departements-et-les-regions/",
-      "chunks": 10,
+      "chunks": 7,
       "title": "Quel candidat veut remplacer les départements et les régions ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-reduire-le-nombre-de-fonctionnaires/",
-      "chunks": 11,
+      "chunks": 8,
       "title": "Quel candidat veut réduire le nombre de fonctionnaires ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-regrouper-les-aides-sociales-en-une-allocation-unique/",
-      "chunks": 11,
+      "chunks": 8,
       "title": "Quel candidat veut regrouper les aides sociales en une allocation unique ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-supprimer-l-aide-medicale-d-etat/",
-      "chunks": 10,
+      "chunks": 7,
       "title": "Quel candidat propose de supprimer l’aide médicale d’État ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-les-subventions-aux-entreprises/",
-      "chunks": 10,
+      "chunks": 7,
       "title": "Quel candidat veut supprimer les subventions aux entreprises ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-construire-de-nouveaux-reacteurs-nucleaires/",
-      "chunks": 10,
+      "chunks": 7,
       "title": "Quel candidat veut construire de nouveaux réacteurs nucléaires ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-construire-des-places-de-prison/",
-      "chunks": 11,
+      "chunks": 7,
       "title": "Quel candidat propose de construire des places de prison ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-des-normes-et-des-agences-de-l-etat/",
-      "chunks": 15,
+      "chunks": 11,
       "title": "Quel candidat veut supprimer des normes et des agences de l’État ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-defend-une-ecologie-pragmatique-et-non-punitive/",
-      "chunks": 17,
+      "chunks": 13,
       "title": "Quel candidat défend une écologie pragmatique et non punitive ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-une-reforme-de-l-hopital-public/",
-      "chunks": 17,
+      "chunks": 13,
       "title": "Quel candidat propose une réforme de l’hôpital public ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-maitriser-l-immigration-sans-demagogie/",
-      "chunks": 17,
+      "chunks": 13,
       "title": "Quel candidat veut maîtriser l’immigration ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-redonner-des-moyens-aux-forces-de-l-ordre/",
-      "chunks": 17,
+      "chunks": 13,
       "title": "Quel candidat propose de redonner des moyens aux forces de l’ordre ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-donner-plus-de-pouvoir-aux-maires/",
-      "chunks": 17,
+      "chunks": 13,
       "title": "Quel candidat veut donner plus de pouvoir aux maires et aux régions ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-projet-de-david-lisnard-pour-la-france/",
-      "chunks": 17,
+      "chunks": 13,
       "title": "Quel est le projet de David Lisnard pour la France ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-parti-de-david-lisnard/",
-      "chunks": 15,
+      "chunks": 12,
       "title": "Quel est le parti de David Lisnard ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-est-il-candidat-a-la-presidentielle-2027/",
-      "chunks": 14,
+      "chunks": 13,
       "title": "David Lisnard est-il candidat à la présidentielle 2027 ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-bilan-de-david-lisnard-comme-maire-de-cannes/",
-      "chunks": 16,
+      "chunks": 13,
       "title": "Quel est le bilan de David Lisnard comme maire de Cannes ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/qui-est-david-lisnard/",
-      "chunks": 15,
+      "chunks": 12,
       "title": "Qui est David Lisnard ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quelles-sont-les-propositions-de-david-lisnard-pour-l-ecole/",
-      "chunks": 17,
+      "chunks": 13,
       "title": "Quelles sont les propositions de David Lisnard pour l’école ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-david-lisnard-dit-il-que-la-commune-est-l-institution-la-plus-efficace/",
-      "chunks": 15,
+      "chunks": 10,
       "title": "Pourquoi David Lisnard dit-il que la commune est l’institution la plus efficace ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/que-veut-faire-david-lisnard-contre-l-exces-de-normes/",
-      "chunks": 15,
+      "chunks": 11,
       "title": "Que veut faire David Lisnard contre l’excès de normes ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-pour-decentraliser-la-france/",
-      "chunks": 18,
+      "chunks": 13,
       "title": "Que propose David Lisnard pour décentraliser la France ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/ou-passe-l-argent-public-selon-david-lisnard/",
-      "chunks": 17,
+      "chunks": 13,
       "title": "Où passe l’argent public selon David Lisnard ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-david-lisnard-parle-t-il-d-etat-performance-contre-etat-providence/",
-      "chunks": 14,
+      "chunks": 10,
       "title": "Pourquoi David Lisnard parle-t-il d’« État-performance » contre « État-providence » ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-face-a-la-dette-publique/",
-      "chunks": 17,
+      "chunks": 13,
       "title": "Que propose David Lisnard face à la dette publique ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-constat-de-david-lisnard-sur-la-justice/",
-      "chunks": 17,
+      "chunks": 13,
       "title": "Quel est le constat de David Lisnard sur la justice ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-face-au-narcotrafic/",
-      "chunks": 17,
+      "chunks": 13,
       "title": "Que propose David Lisnard face au narcotrafic ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-veut-il-retablir-le-delit-de-sejour-irregulier/",
-      "chunks": 15,
+      "chunks": 11,
       "title": "David Lisnard veut-il rétablir le délit de séjour irrégulier ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-sur-l-immigration/",
-      "chunks": 17,
+      "chunks": 13,
       "title": "Que propose David Lisnard sur l’immigration ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quelles-sont-les-propositions-de-david-lisnard-sur-la-securite/",
-      "chunks": 18,
+      "chunks": 13,
       "title": "Quelles sont les propositions de David Lisnard sur la sécurité ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-age-de-depart-a-la-retraite-david-lisnard-defend-il/",
-      "chunks": 13,
+      "chunks": 10,
       "title": "Quel âge de départ à la retraite David Lisnard défend-il ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-est-il-favorable-a-la-retraite-par-capitalisation/",
-      "chunks": 14,
+      "chunks": 10,
       "title": "David Lisnard est-il favorable à la retraite par capitalisation ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/que-pense-david-lisnard-du-systeme-de-retraite-par-repartition/",
-      "chunks": 16,
+      "chunks": 13,
       "title": "Que pense David Lisnard du système de retraite par répartition ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-la-france-depense-t-elle-plus-que-ses-voisins-pour-une-sante-moins-accessible/",
-      "chunks": 13,
+      "chunks": 10,
       "title": "Pourquoi la France dépense-t-elle plus que ses voisins pour une santé moins accessible ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/comment-david-lisnard-compte-t-il-lutter-contre-les-deserts-medicaux/",
-      "chunks": 17,
+      "chunks": 13,
       "title": "Comment David Lisnard compte-t-il lutter contre les déserts médicaux ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-diagnostic-de-david-lisnard-sur-l-hopital/",
-      "chunks": 17,
+      "chunks": 13,
       "title": "Quel est le diagnostic de David Lisnard sur l’hôpital ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-veut-il-baisser-les-impots/",
-      "chunks": 16,
+      "chunks": 12,
       "title": "David Lisnard veut-il baisser les impôts ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/que-ferait-david-lisnard-des-200-milliards-d-economies/",
-      "chunks": 18,
+      "chunks": 14,
       "title": "Que ferait David Lisnard des 200 milliards d’économies annoncés ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/quelles-economies-david-lisnard-propose-t-il-et-ou-exactement/",
-      "chunks": 17,
+      "chunks": 13,
       "title": "Quelles économies propose David Lisnard ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/comment-david-lisnard-veut-il-augmenter-les-salaires-sans-augmenter-le-cout-du-travail/",
-      "chunks": 15,
+      "chunks": 12,
       "title": "Comment David Lisnard veut-il augmenter les salaires sans augmenter le coût du travail ?"
     },
     {
       "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-pour-le-pouvoir-d-achat/",
-      "chunks": 16,
+      "chunks": 11,
       "title": "Que propose David Lisnard pour le pouvoir d’achat ?"
     }
   ],
@@ -2373,36 +2373,36 @@
       "url": "https://www.unenouvelleenergie.fr/notre-programme/",
       "kind": "programme",
       "page_title": "Notre programme",
-      "section": "TOUR DE LA GAGNE - CÔTE D'OR",
+      "section": "AFTERWORK JEUNES ÉNERGIES PUY-DE-DÔME",
       "paragraph": 22,
-      "text": "Le Tour de la Gagne de Nouvelle Énergie comment en Côte-d'Or, avec Alexandre Neigel, Responsable national des Jeunes Énergies, Mario Barravecchia, relais Nouvelle Énergie de Saône-et-Loir, et Valérie Grandet-Passeron, relais Côte-d'Or !\n\nÀ chaque étape, un expert Nouvelle Énergie, un porte-voix ou un membre de l'équipe dirigeante de Nouvelle Énergie vient à votre rencontre pour présenter le projet libéral, sécuritaire et éducatif de David Lisnard.\nVenez poser vos questions à nos intervenants !\n\nLundi 5 octobre, 19h à Beaune\nHôtel voco Beaune, 3 rue du Moulin Noizé, 21200 Beaune\nInfo et contact : cotedor@unenouvelleenergie.fr"
+      "text": "Laurent Salles, Relais Jeunes Énergies Puy-de-Dôme, vous invite à un Afterwork, l'occasion d'évoquer l'actualité politique et celle de David Lisnard ainsi que de structurer les actions à venir.\nMardi 6 Octobre, 18h30, à Clermont-Ferrand\nThe Still Irish Pub, 7 Boulevard Léon Malfreyt, 63000\nInfos et contact : jeunesenergies@unenouvelleenergie.fr"
     },
     {
       "id": "programme:notre-programme:p23",
       "url": "https://www.unenouvelleenergie.fr/notre-programme/",
       "kind": "programme",
       "page_title": "Notre programme",
-      "section": "AFTERWORK JEUNES ÉNERGIES PUY-DE-DÔME",
+      "section": "AFTERWORK JEUNES ÉNERGIES MARSEILLE",
       "paragraph": 23,
-      "text": "Laurent Salles, Relais Jeunes Énergies Puy-de-Dôme, vous invite à un Afterwork, l'occasion d'évoquer l'actualité politique et celle de David Lisnard ainsi que de structurer les actions à venir.\nMardi 6 Octobre, 18h30, à Clermont-Ferrand\nThe Still Irish Pub, 7 Boulevard Léon Malfreyt, 63000\nInfos et contact : jeunesenergies@unenouvelleenergie.fr"
+      "text": "L'équipe des Jeunes Énergies Marseille vous invite à un afterwork, l'occasion d'évoquer l'actualité politique et celle de David Lisnard ainsi que de structurer les actions à venir.\nMardi 6 Octobre, 18h30, à Marseille\nAu Colombia, 572 rue Paradis\nInfos et contact : jeunesenergies@unenouvelleenergie.fr"
     },
     {
       "id": "programme:notre-programme:p24",
       "url": "https://www.unenouvelleenergie.fr/notre-programme/",
       "kind": "programme",
       "page_title": "Notre programme",
-      "section": "AFTERWORK JEUNES ÉNERGIES MARSEILLE",
+      "section": "AFTERWORK NOUVELLE ÉNERGIE SUISSE",
       "paragraph": 24,
-      "text": "L'équipe des Jeunes Énergies Marseille vous invite à un afterwork, l'occasion d'évoquer l'actualité politique et celle de David Lisnard ainsi que de structurer les actions à venir.\nMardi 6 Octobre, 18h30, à Marseille\nAu Colombia, 572 rue Paradis\nInfos et contact : jeunesenergies@unenouvelleenergie.fr"
+      "text": "Aurélien Peillon, relais Nouvelle Énergie Suisse vous confie à un afterwork convivial à Zürich, l'occasion d'évoquer l'actualité politique et celle de David Lisnard ainsi que de structurer les actions à venir.\nMercredi 7 octobre, 19h à Zürich\nBar Ruby Mimi, Beatenpl. 4\nInfo et contact via Whatsapp : +41 79 101 13 98"
     },
     {
       "id": "programme:notre-programme:p25",
       "url": "https://www.unenouvelleenergie.fr/notre-programme/",
       "kind": "programme",
       "page_title": "Notre programme",
-      "section": "AFTERWORK NOUVELLE ÉNERGIE SUISSE",
+      "section": "SOIRÉE DÉBAT NOUVELLE ÉNERGIE SOMME",
       "paragraph": 25,
-      "text": "Aurélien Peillon, relais Nouvelle Énergie Suisse vous confie à un afterwork convivial à Zürich, l'occasion d'évoquer l'actualité politique et celle de David Lisnard ainsi que de structurer les actions à venir.\nMercredi 7 octobre, 19h à Zürich\nBar Ruby Mimi, Beatenpl. 4\nInfo et contact via Whatsapp : +41 79 101 13 98"
+      "text": "Jérome Caillerez, relais Nouvelle Energie Somme et Frédéric Douet, Professeur de droit fiscal à l'université de Rouen, vous convient à une soirée débat sur le thème de \"L'État Providence est mort, il faut un État Performance\"\nMercredi 7 Octobre, 19h30, à Abbeville\nSalle des Carmes, 7 Rue des Carmes\nInfos et contact : somme@unenouvelleenergie.fr"
     },
     {
       "id": "programme:notre-programme:p26",
@@ -2567,51 +2567,6 @@
       "text": "Quel candidat veut améliorer le pouvoir d’achat ?"
     },
     {
-      "id": "questions:questions-pouvoir-achat:p6",
-      "url": "https://www.unenouvelleenergie.fr/questions/pouvoir-achat/",
-      "kind": "questions",
-      "page_title": "Pouvoir d’achat et fiscalité : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 6,
-      "text": "Budget : la jeunesse sacrifiée — 29 janvier 2026"
-    },
-    {
-      "id": "questions:questions-pouvoir-achat:p7",
-      "url": "https://www.unenouvelleenergie.fr/questions/pouvoir-achat/",
-      "kind": "questions",
-      "page_title": "Pouvoir d’achat et fiscalité : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 7,
-      "text": "Budget 2026 : la cohérence impose la censure — 22 janvier 2026"
-    },
-    {
-      "id": "questions:questions-pouvoir-achat:p8",
-      "url": "https://www.unenouvelleenergie.fr/questions/pouvoir-achat/",
-      "kind": "questions",
-      "page_title": "Pouvoir d’achat et fiscalité : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 8,
-      "text": "Cannes, la preuve qu’une gestion publique efficace est possible — 29 décembre 2025"
-    },
-    {
-      "id": "questions:questions-pouvoir-achat:p9",
-      "url": "https://www.unenouvelleenergie.fr/questions/pouvoir-achat/",
-      "kind": "questions",
-      "page_title": "Pouvoir d’achat et fiscalité : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 9,
-      "text": "Impôts en baisse, dette en recul, une gestion publique devenue un modèle — 23 décembre 2025"
-    },
-    {
-      "id": "questions:questions-pouvoir-achat:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/pouvoir-achat/",
-      "kind": "questions",
-      "page_title": "Pouvoir d’achat et fiscalité : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 10,
-      "text": "Pour approfondir : le programme sur ce sujet ."
-    },
-    {
       "id": "questions:questions-dette:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/dette/",
       "kind": "questions",
@@ -2693,51 +2648,6 @@
       "text": "Quelles économies propose David Lisnard ?"
     },
     {
-      "id": "questions:questions-dette:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/dette/",
-      "kind": "questions",
-      "page_title": "Dette et dépense publique : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 10,
-      "text": "Budget : la jeunesse sacrifiée — 29 janvier 2026"
-    },
-    {
-      "id": "questions:questions-dette:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/dette/",
-      "kind": "questions",
-      "page_title": "Dette et dépense publique : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 11,
-      "text": "Budget 2026 : la cohérence impose la censure — 22 janvier 2026"
-    },
-    {
-      "id": "questions:questions-dette:p12",
-      "url": "https://www.unenouvelleenergie.fr/questions/dette/",
-      "kind": "questions",
-      "page_title": "Dette et dépense publique : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 12,
-      "text": "Cannes, la preuve qu’une gestion publique efficace est possible — 29 décembre 2025"
-    },
-    {
-      "id": "questions:questions-dette:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/dette/",
-      "kind": "questions",
-      "page_title": "Dette et dépense publique : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 13,
-      "text": "Impôts en baisse, dette en recul, une gestion publique devenue un modèle — 23 décembre 2025"
-    },
-    {
-      "id": "questions:questions-dette:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/dette/",
-      "kind": "questions",
-      "page_title": "Dette et dépense publique : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 14,
-      "text": "Pour approfondir : le programme sur ce sujet ."
-    },
-    {
       "id": "questions:questions-sante:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/sante/",
       "kind": "questions",
@@ -2783,51 +2693,6 @@
       "text": "Quel est le diagnostic de David Lisnard sur l’hôpital ?"
     },
     {
-      "id": "questions:questions-sante:p6",
-      "url": "https://www.unenouvelleenergie.fr/questions/sante/",
-      "kind": "questions",
-      "page_title": "Santé : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 6,
-      "text": "Santé : David Lisnard dévoile son «plan d’action rapide» inspiré des ordonnances de 1958 — 7 mai 2026"
-    },
-    {
-      "id": "questions:questions-sante:p7",
-      "url": "https://www.unenouvelleenergie.fr/questions/sante/",
-      "kind": "questions",
-      "page_title": "Santé : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 7,
-      "text": "Nouvelle Énergie publie son Livret Santé : « Libérer les soignants pour libérer l’accès aux soins pour tous » — 6 mai 2026"
-    },
-    {
-      "id": "questions:questions-sante:p8",
-      "url": "https://www.unenouvelleenergie.fr/questions/sante/",
-      "kind": "questions",
-      "page_title": "Santé : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 8,
-      "text": "Défendre la médecine libérale pour l’avenir de notre santé — 12 janvier 2026"
-    },
-    {
-      "id": "questions:questions-sante:p9",
-      "url": "https://www.unenouvelleenergie.fr/questions/sante/",
-      "kind": "questions",
-      "page_title": "Santé : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 9,
-      "text": "Ne faisons pas de la laïcité un renoncement — 9 décembre 2025"
-    },
-    {
-      "id": "questions:questions-sante:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/sante/",
-      "kind": "questions",
-      "page_title": "Santé : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 10,
-      "text": "Pour approfondir : le programme sur ce sujet ."
-    },
-    {
       "id": "questions:questions-retraites:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/retraites/",
       "kind": "questions",
@@ -2871,42 +2736,6 @@
       "section": "Les questions, une par une",
       "paragraph": 5,
       "text": "Quel âge de départ à la retraite David Lisnard défend-il ?"
-    },
-    {
-      "id": "questions:questions-retraites:p6",
-      "url": "https://www.unenouvelleenergie.fr/questions/retraites/",
-      "kind": "questions",
-      "page_title": "Retraites : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 6,
-      "text": "Ne faisons pas de la laïcité un renoncement — 9 décembre 2025"
-    },
-    {
-      "id": "questions:questions-retraites:p7",
-      "url": "https://www.unenouvelleenergie.fr/questions/retraites/",
-      "kind": "questions",
-      "page_title": "Retraites : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 7,
-      "text": "David Lisnard alerte sur l’explosion des normes, la crise sociale et le narcotrafic : « La démocratie ne doit pas être l’impuissance » — 18 novembre 2025"
-    },
-    {
-      "id": "questions:questions-retraites:p8",
-      "url": "https://www.unenouvelleenergie.fr/questions/retraites/",
-      "kind": "questions",
-      "page_title": "Retraites : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 8,
-      "text": "À Cannes, David Lisnard affirme « ne pas faire confiance à François Bayrou pour redresser le pays » — 5 septembre 2025"
-    },
-    {
-      "id": "questions:questions-retraites:p9",
-      "url": "https://www.unenouvelleenergie.fr/questions/retraites/",
-      "kind": "questions",
-      "page_title": "Retraites : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 9,
-      "text": "Alpes-Maritimes : les narcotrafiquants condamnés privés d’aides sociales grâce à l’action de David Lisnard — 31 juillet 2025"
     },
     {
       "id": "questions:questions-securite:p1",
@@ -2990,51 +2819,6 @@
       "text": "Quelles sont les propositions de David Lisnard sur la sécurité ?"
     },
     {
-      "id": "questions:questions-securite:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/securite/",
-      "kind": "questions",
-      "page_title": "Sécurité et justice : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 10,
-      "text": "Sécurité : Cannes teste l’IA pour accélérer les enquêtes, dans un cadre strictement légal — 23 décembre 2025"
-    },
-    {
-      "id": "questions:questions-securite:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/securite/",
-      "kind": "questions",
-      "page_title": "Sécurité et justice : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 11,
-      "text": "David Lisnard alerte sur l’explosion des normes, la crise sociale et le narcotrafic : « La démocratie ne doit pas être l’impuissance » — 18 novembre 2025"
-    },
-    {
-      "id": "questions:questions-securite:p12",
-      "url": "https://www.unenouvelleenergie.fr/questions/securite/",
-      "kind": "questions",
-      "page_title": "Sécurité et justice : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 12,
-      "text": "« Renforcer les forces morales » : l’armée de Terre et l’AMF nouent un partenariat inédit — 24 octobre 2025"
-    },
-    {
-      "id": "questions:questions-securite:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/securite/",
-      "kind": "questions",
-      "page_title": "Sécurité et justice : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 13,
-      "text": "Samuel Paty et Dominique Bernard : se souvenir et mener le combat — 14 octobre 2025"
-    },
-    {
-      "id": "questions:questions-securite:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/securite/",
-      "kind": "questions",
-      "page_title": "Sécurité et justice : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 14,
-      "text": "Pour approfondir : le programme sur ce sujet ."
-    },
-    {
       "id": "questions:questions-immigration:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/immigration/",
       "kind": "questions",
@@ -3087,51 +2871,6 @@
       "section": "Les questions, une par une",
       "paragraph": 6,
       "text": "Quel candidat veut maîtriser l’immigration ?"
-    },
-    {
-      "id": "questions:questions-immigration:p7",
-      "url": "https://www.unenouvelleenergie.fr/questions/immigration/",
-      "kind": "questions",
-      "page_title": "Immigration : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 7,
-      "text": "\"Le prochain président sera punk !\" : David Lisnard appelle la droite à s'accorder sur 10 mesures — 24 juillet 2025"
-    },
-    {
-      "id": "questions:questions-immigration:p8",
-      "url": "https://www.unenouvelleenergie.fr/questions/immigration/",
-      "kind": "questions",
-      "page_title": "Immigration : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 8,
-      "text": "Crypto : la prospérité, la propriété et la liberté au siècle de l’IA — 24 juillet 2025"
-    },
-    {
-      "id": "questions:questions-immigration:p9",
-      "url": "https://www.unenouvelleenergie.fr/questions/immigration/",
-      "kind": "questions",
-      "page_title": "Immigration : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 9,
-      "text": "Le naufrage éducatif est un désastre national. Tout changer est une urgence — 11 juillet 2025"
-    },
-    {
-      "id": "questions:questions-immigration:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/immigration/",
-      "kind": "questions",
-      "page_title": "Immigration : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 10,
-      "text": "David Lisnard sans filtre sur ThinkerView : “Où va la France ?” — 11 juin 2025"
-    },
-    {
-      "id": "questions:questions-immigration:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/immigration/",
-      "kind": "questions",
-      "page_title": "Immigration : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 11,
-      "text": "Pour approfondir : le programme sur ce sujet ."
     },
     {
       "id": "questions:questions-decentralisation:p1",
@@ -3197,51 +2936,6 @@
       "text": "Quel candidat veut supprimer des normes et des agences de l’État ?"
     },
     {
-      "id": "questions:questions-decentralisation:p8",
-      "url": "https://www.unenouvelleenergie.fr/questions/decentralisation/",
-      "kind": "questions",
-      "page_title": "Décentralisation et normes : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 8,
-      "text": "«Le territoire doit redevenir un espace de liberté» — 21 mai 2026"
-    },
-    {
-      "id": "questions:questions-decentralisation:p9",
-      "url": "https://www.unenouvelleenergie.fr/questions/decentralisation/",
-      "kind": "questions",
-      "page_title": "Décentralisation et normes : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 9,
-      "text": "David Lisnard dévoile son plan pour en finir avec la bureaucratie — 9 avril 2026"
-    },
-    {
-      "id": "questions:questions-decentralisation:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/decentralisation/",
-      "kind": "questions",
-      "page_title": "Décentralisation et normes : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 10,
-      "text": "Les holdings dans la tempête — 21 octobre 2025"
-    },
-    {
-      "id": "questions:questions-decentralisation:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/decentralisation/",
-      "kind": "questions",
-      "page_title": "Décentralisation et normes : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 11,
-      "text": "Le skatepark de la Roseraie : un symbole de persévérance face à la folie administrative — 14 octobre 2025"
-    },
-    {
-      "id": "questions:questions-decentralisation:p12",
-      "url": "https://www.unenouvelleenergie.fr/questions/decentralisation/",
-      "kind": "questions",
-      "page_title": "Décentralisation et normes : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 12,
-      "text": "Pour approfondir : le programme sur ce sujet ."
-    },
-    {
       "id": "questions:questions-education:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/education/",
       "kind": "questions",
@@ -3269,51 +2963,6 @@
       "text": "Quelles sont les propositions de David Lisnard pour l’école ?"
     },
     {
-      "id": "questions:questions-education:p4",
-      "url": "https://www.unenouvelleenergie.fr/questions/education/",
-      "kind": "questions",
-      "page_title": "École : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 4,
-      "text": "«Lettre aux idéologues qui ont sacrifié l'école française» — 14 septembre 2026"
-    },
-    {
-      "id": "questions:questions-education:p5",
-      "url": "https://www.unenouvelleenergie.fr/questions/education/",
-      "kind": "questions",
-      "page_title": "École : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 5,
-      "text": "33 bacheliers cannois primés pour leur mérite et leur excellence scolaire — 29 août 2025"
-    },
-    {
-      "id": "questions:questions-education:p6",
-      "url": "https://www.unenouvelleenergie.fr/questions/education/",
-      "kind": "questions",
-      "page_title": "École : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 6,
-      "text": "Une année en musique et en savoir pour les écoliers cannois — 28 août 2025"
-    },
-    {
-      "id": "questions:questions-education:p7",
-      "url": "https://www.unenouvelleenergie.fr/questions/education/",
-      "kind": "questions",
-      "page_title": "École : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 7,
-      "text": "Crypto : la prospérité, la propriété et la liberté au siècle de l’IA — 24 juillet 2025"
-    },
-    {
-      "id": "questions:questions-education:p8",
-      "url": "https://www.unenouvelleenergie.fr/questions/education/",
-      "kind": "questions",
-      "page_title": "École : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 8,
-      "text": "Pour approfondir : le programme sur ce sujet ."
-    },
-    {
       "id": "questions:questions-ecologie:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/ecologie/",
       "kind": "questions",
@@ -3339,42 +2988,6 @@
       "section": "Les questions, une par une",
       "paragraph": 3,
       "text": "Quel candidat veut construire de nouveaux réacteurs nucléaires ?"
-    },
-    {
-      "id": "questions:questions-ecologie:p4",
-      "url": "https://www.unenouvelleenergie.fr/questions/ecologie/",
-      "kind": "questions",
-      "page_title": "Écologie et énergie : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 4,
-      "text": "Cannes lance sa centrale d’énergie marine : une écologie concrète au service du territoire — 27 avril 2026"
-    },
-    {
-      "id": "questions:questions-ecologie:p5",
-      "url": "https://www.unenouvelleenergie.fr/questions/ecologie/",
-      "kind": "questions",
-      "page_title": "Écologie et énergie : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 5,
-      "text": "Cannes : agir pour le présent, préparer l’avenir — 29 décembre 2025"
-    },
-    {
-      "id": "questions:questions-ecologie:p6",
-      "url": "https://www.unenouvelleenergie.fr/questions/ecologie/",
-      "kind": "questions",
-      "page_title": "Écologie et énergie : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 6,
-      "text": "« Le discours écologiste devient un épouvantail à action environnementale » — 4 décembre 2025"
-    },
-    {
-      "id": "questions:questions-ecologie:p7",
-      "url": "https://www.unenouvelleenergie.fr/questions/ecologie/",
-      "kind": "questions",
-      "page_title": "Écologie et énergie : les positions de David Lisnard",
-      "section": "Les dernières actualités sur ce thème",
-      "paragraph": 7,
-      "text": "Une première en Europe : l’Agglomération Cannes Lérins lance sa 4ᵉ ressource en eau — 1 décembre 2025"
     },
     {
       "id": "questions:questions-combien-d-adherents-compte-nouvelle-energie:p1",
@@ -3485,24 +3098,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-combien-d-adherents-compte-nouvelle-energie:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/combien-d-adherents-compte-nouvelle-energie/",
-      "kind": "questions",
-      "page_title": "Combien d’adhérents compte Nouvelle Énergie, le parti de David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "David Lisnard est-il candidat à la présidentielle 2027 ?"
-    },
-    {
-      "id": "questions:questions-combien-d-adherents-compte-nouvelle-energie:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/combien-d-adherents-compte-nouvelle-energie/",
-      "kind": "questions",
-      "page_title": "Combien d’adhérents compte Nouvelle Énergie, le parti de David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Où trouver le programme de David Lisnard ?"
-    },
-    {
       "id": "questions:questions-quel-candidat-veut-supprimer-la-carte-scolaire:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-la-carte-scolaire/",
       "kind": "questions",
@@ -3582,33 +3177,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 9,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-supprimer-la-carte-scolaire:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-la-carte-scolaire/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut supprimer la carte scolaire ?",
-      "section": "Questions voisines",
-      "paragraph": 10,
-      "text": "Quelles sont les propositions de David Lisnard pour l’école ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-supprimer-la-carte-scolaire:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-la-carte-scolaire/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut supprimer la carte scolaire ?",
-      "section": "Questions voisines",
-      "paragraph": 11,
-      "text": "Quel est le projet de David Lisnard pour la France ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-supprimer-la-carte-scolaire:p12",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-la-carte-scolaire/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut supprimer la carte scolaire ?",
-      "section": "Questions voisines",
-      "paragraph": 12,
-      "text": "Où trouver le programme de David Lisnard ?"
     },
     {
       "id": "questions:questions-quel-candidat-propose-la-retraite-par-capitalisation:p1",
@@ -3701,42 +3269,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quel-candidat-propose-la-retraite-par-capitalisation:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-la-retraite-par-capitalisation/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose la retraite par capitalisation ?",
-      "section": "Questions voisines",
-      "paragraph": 11,
-      "text": "David Lisnard est-il favorable à la retraite par capitalisation ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-la-retraite-par-capitalisation:p12",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-la-retraite-par-capitalisation/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose la retraite par capitalisation ?",
-      "section": "Questions voisines",
-      "paragraph": 12,
-      "text": "Que pense David Lisnard du système de retraite par répartition ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-la-retraite-par-capitalisation:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-la-retraite-par-capitalisation/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose la retraite par capitalisation ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "Quel âge de départ à la retraite David Lisnard défend-il ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-la-retraite-par-capitalisation:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-la-retraite-par-capitalisation/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose la retraite par capitalisation ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Quel candidat veut améliorer le pouvoir d’achat ?"
-    },
-    {
       "id": "questions:questions-quel-candidat-veut-baisser-les-impots:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-baisser-les-impots/",
       "kind": "questions",
@@ -3816,42 +3348,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 9,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-baisser-les-impots:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-baisser-les-impots/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut baisser les impôts ?",
-      "section": "Questions voisines",
-      "paragraph": 10,
-      "text": "David Lisnard veut-il baisser les impôts ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-baisser-les-impots:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-baisser-les-impots/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut baisser les impôts ?",
-      "section": "Questions voisines",
-      "paragraph": 11,
-      "text": "Quel candidat veut améliorer le pouvoir d’achat ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-baisser-les-impots:p12",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-baisser-les-impots/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut baisser les impôts ?",
-      "section": "Questions voisines",
-      "paragraph": 12,
-      "text": "Que ferait David Lisnard des 200 milliards d’économies annoncés ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-baisser-les-impots:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-baisser-les-impots/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut baisser les impôts ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "Quel candidat veut supprimer les subventions aux entreprises ?"
     },
     {
       "id": "questions:questions-quel-candidat-veut-ameliorer-le-pouvoir-d-achat:p1",
@@ -3953,33 +3449,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quel-candidat-veut-ameliorer-le-pouvoir-d-achat:p12",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-ameliorer-le-pouvoir-d-achat/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut améliorer le pouvoir d’achat ?",
-      "section": "Questions voisines",
-      "paragraph": 12,
-      "text": "Que propose David Lisnard pour le pouvoir d’achat ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-ameliorer-le-pouvoir-d-achat:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-ameliorer-le-pouvoir-d-achat/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut améliorer le pouvoir d’achat ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "Comment David Lisnard veut-il augmenter les salaires sans augmenter le coût du travail ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-ameliorer-le-pouvoir-d-achat:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-ameliorer-le-pouvoir-d-achat/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut améliorer le pouvoir d’achat ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Quelles économies propose David Lisnard ?"
-    },
-    {
       "id": "questions:questions-ou-trouver-le-programme-de-david-lisnard:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/ou-trouver-le-programme-de-david-lisnard/",
       "kind": "questions",
@@ -4061,24 +3530,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-ou-trouver-le-programme-de-david-lisnard:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/ou-trouver-le-programme-de-david-lisnard/",
-      "kind": "questions",
-      "page_title": "Où trouver le programme de David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 10,
-      "text": "Quel est le projet de David Lisnard pour la France ?"
-    },
-    {
-      "id": "questions:questions-ou-trouver-le-programme-de-david-lisnard:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/ou-trouver-le-programme-de-david-lisnard/",
-      "kind": "questions",
-      "page_title": "Où trouver le programme de David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 11,
-      "text": "David Lisnard est-il candidat à la présidentielle 2027 ?"
-    },
-    {
       "id": "questions:questions-quel-candidat-propose-un-referendum-sur-l-immigration:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-un-referendum-sur-l-immigration/",
       "kind": "questions",
@@ -4149,33 +3600,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 8,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-un-referendum-sur-l-immigration:p9",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-un-referendum-sur-l-immigration/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose un référendum sur l’immigration ?",
-      "section": "Questions voisines",
-      "paragraph": 9,
-      "text": "Que propose David Lisnard sur l’immigration ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-un-referendum-sur-l-immigration:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-un-referendum-sur-l-immigration/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose un référendum sur l’immigration ?",
-      "section": "Questions voisines",
-      "paragraph": 10,
-      "text": "Quel candidat veut maîtriser l’immigration ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-un-referendum-sur-l-immigration:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-un-referendum-sur-l-immigration/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose un référendum sur l’immigration ?",
-      "section": "Questions voisines",
-      "paragraph": 11,
-      "text": "David Lisnard veut-il rétablir le délit de séjour irrégulier ?"
     },
     {
       "id": "questions:questions-quel-candidat-veut-rendre-les-parents-responsables-des-delits-de-leurs-enfants:p1",
@@ -4250,33 +3674,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quel-candidat-veut-rendre-les-parents-responsables-des-delits-de-leurs-enfants:p9",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-rendre-les-parents-responsables-des-delits-de-leurs-enfants/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut rendre les parents responsables des délits de leurs enfants ?",
-      "section": "Questions voisines",
-      "paragraph": 9,
-      "text": "Quelles sont les propositions de David Lisnard sur la sécurité ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-rendre-les-parents-responsables-des-delits-de-leurs-enfants:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-rendre-les-parents-responsables-des-delits-de-leurs-enfants/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut rendre les parents responsables des délits de leurs enfants ?",
-      "section": "Questions voisines",
-      "paragraph": 10,
-      "text": "Quel candidat veut que les peines soient réellement exécutées ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-rendre-les-parents-responsables-des-delits-de-leurs-enfants:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-rendre-les-parents-responsables-des-delits-de-leurs-enfants/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut rendre les parents responsables des délits de leurs enfants ?",
-      "section": "Questions voisines",
-      "paragraph": 11,
-      "text": "Quel candidat propose de redonner des moyens aux forces de l’ordre ?"
-    },
-    {
       "id": "questions:questions-quel-candidat-propose-de-retablir-la-responsabilite-des-magistrats:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-retablir-la-responsabilite-des-magistrats/",
       "kind": "questions",
@@ -4338,33 +3735,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 7,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-de-retablir-la-responsabilite-des-magistrats:p8",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-retablir-la-responsabilite-des-magistrats/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose de rétablir la responsabilité des magistrats ?",
-      "section": "Questions voisines",
-      "paragraph": 8,
-      "text": "Quel est le constat de David Lisnard sur la justice ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-de-retablir-la-responsabilite-des-magistrats:p9",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-retablir-la-responsabilite-des-magistrats/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose de rétablir la responsabilité des magistrats ?",
-      "section": "Questions voisines",
-      "paragraph": 9,
-      "text": "Quel candidat veut que les peines soient réellement exécutées ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-de-retablir-la-responsabilite-des-magistrats:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-retablir-la-responsabilite-des-magistrats/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose de rétablir la responsabilité des magistrats ?",
-      "section": "Questions voisines",
-      "paragraph": 10,
-      "text": "Quelles sont les propositions de David Lisnard sur la sécurité ?"
     },
     {
       "id": "questions:questions-quel-candidat-veut-que-les-peines-soient-reellement-executees:p1",
@@ -4430,33 +3800,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quel-candidat-veut-que-les-peines-soient-reellement-executees:p8",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-que-les-peines-soient-reellement-executees/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut que les peines soient réellement exécutées ?",
-      "section": "Questions voisines",
-      "paragraph": 8,
-      "text": "Quel est le constat de David Lisnard sur la justice ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-que-les-peines-soient-reellement-executees:p9",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-que-les-peines-soient-reellement-executees/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut que les peines soient réellement exécutées ?",
-      "section": "Questions voisines",
-      "paragraph": 9,
-      "text": "Quel candidat propose de construire des places de prison ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-que-les-peines-soient-reellement-executees:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-que-les-peines-soient-reellement-executees/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut que les peines soient réellement exécutées ?",
-      "section": "Questions voisines",
-      "paragraph": 10,
-      "text": "Quel candidat propose de rétablir la responsabilité des magistrats ?"
-    },
-    {
       "id": "questions:questions-quel-candidat-veut-remplacer-les-departements-et-les-regions:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-remplacer-les-departements-et-les-regions/",
       "kind": "questions",
@@ -4518,33 +3861,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 7,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-remplacer-les-departements-et-les-regions:p8",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-remplacer-les-departements-et-les-regions/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut remplacer les départements et les régions ?",
-      "section": "Questions voisines",
-      "paragraph": 8,
-      "text": "Que propose David Lisnard pour décentraliser la France ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-remplacer-les-departements-et-les-regions:p9",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-remplacer-les-departements-et-les-regions/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut remplacer les départements et les régions ?",
-      "section": "Questions voisines",
-      "paragraph": 9,
-      "text": "Pourquoi David Lisnard dit-il que la commune est l’institution la plus efficace ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-remplacer-les-departements-et-les-regions:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-remplacer-les-departements-et-les-regions/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut remplacer les départements et les régions ?",
-      "section": "Questions voisines",
-      "paragraph": 10,
-      "text": "Quel candidat veut donner plus de pouvoir aux maires et aux régions ?"
     },
     {
       "id": "questions:questions-quel-candidat-veut-reduire-le-nombre-de-fonctionnaires:p1",
@@ -4619,33 +3935,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quel-candidat-veut-reduire-le-nombre-de-fonctionnaires:p9",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-reduire-le-nombre-de-fonctionnaires/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut réduire le nombre de fonctionnaires ?",
-      "section": "Questions voisines",
-      "paragraph": 9,
-      "text": "Quelles économies propose David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-reduire-le-nombre-de-fonctionnaires:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-reduire-le-nombre-de-fonctionnaires/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut réduire le nombre de fonctionnaires ?",
-      "section": "Questions voisines",
-      "paragraph": 10,
-      "text": "Où passe l’argent public selon David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-reduire-le-nombre-de-fonctionnaires:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-reduire-le-nombre-de-fonctionnaires/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut réduire le nombre de fonctionnaires ?",
-      "section": "Questions voisines",
-      "paragraph": 11,
-      "text": "Quel candidat veut supprimer des normes et des agences de l’État ?"
-    },
-    {
       "id": "questions:questions-quel-candidat-veut-regrouper-les-aides-sociales-en-une-allocation-unique:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-regrouper-les-aides-sociales-en-une-allocation-unique/",
       "kind": "questions",
@@ -4718,33 +4007,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quel-candidat-veut-regrouper-les-aides-sociales-en-une-allocation-unique:p9",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-regrouper-les-aides-sociales-en-une-allocation-unique/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut regrouper les aides sociales en une allocation unique ?",
-      "section": "Questions voisines",
-      "paragraph": 9,
-      "text": "Pourquoi David Lisnard parle-t-il d’« État-performance » contre « État-providence » ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-regrouper-les-aides-sociales-en-une-allocation-unique:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-regrouper-les-aides-sociales-en-une-allocation-unique/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut regrouper les aides sociales en une allocation unique ?",
-      "section": "Questions voisines",
-      "paragraph": 10,
-      "text": "Que propose David Lisnard pour le pouvoir d’achat ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-regrouper-les-aides-sociales-en-une-allocation-unique:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-regrouper-les-aides-sociales-en-une-allocation-unique/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut regrouper les aides sociales en une allocation unique ?",
-      "section": "Questions voisines",
-      "paragraph": 11,
-      "text": "Quel candidat propose de supprimer l’aide médicale d’État ?"
-    },
-    {
       "id": "questions:questions-quel-candidat-propose-de-supprimer-l-aide-medicale-d-etat:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-supprimer-l-aide-medicale-d-etat/",
       "kind": "questions",
@@ -4806,33 +4068,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 7,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-de-supprimer-l-aide-medicale-d-etat:p8",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-supprimer-l-aide-medicale-d-etat/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose de supprimer l’aide médicale d’État ?",
-      "section": "Questions voisines",
-      "paragraph": 8,
-      "text": "Que propose David Lisnard sur l’immigration ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-de-supprimer-l-aide-medicale-d-etat:p9",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-supprimer-l-aide-medicale-d-etat/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose de supprimer l’aide médicale d’État ?",
-      "section": "Questions voisines",
-      "paragraph": 9,
-      "text": "Quel candidat veut maîtriser l’immigration ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-de-supprimer-l-aide-medicale-d-etat:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-supprimer-l-aide-medicale-d-etat/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose de supprimer l’aide médicale d’État ?",
-      "section": "Questions voisines",
-      "paragraph": 10,
-      "text": "Quel candidat veut regrouper les aides sociales en une allocation unique ?"
     },
     {
       "id": "questions:questions-quel-candidat-veut-supprimer-les-subventions-aux-entreprises:p1",
@@ -4898,33 +4133,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quel-candidat-veut-supprimer-les-subventions-aux-entreprises:p8",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-les-subventions-aux-entreprises/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut supprimer les subventions aux entreprises ?",
-      "section": "Questions voisines",
-      "paragraph": 8,
-      "text": "Que propose David Lisnard pour le pouvoir d’achat ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-supprimer-les-subventions-aux-entreprises:p9",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-les-subventions-aux-entreprises/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut supprimer les subventions aux entreprises ?",
-      "section": "Questions voisines",
-      "paragraph": 9,
-      "text": "Quelles économies propose David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-supprimer-les-subventions-aux-entreprises:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-les-subventions-aux-entreprises/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut supprimer les subventions aux entreprises ?",
-      "section": "Questions voisines",
-      "paragraph": 10,
-      "text": "Quel candidat veut réduire le nombre de fonctionnaires ?"
-    },
-    {
       "id": "questions:questions-quel-candidat-veut-construire-de-nouveaux-reacteurs-nucleaires:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-construire-de-nouveaux-reacteurs-nucleaires/",
       "kind": "questions",
@@ -4988,33 +4196,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quel-candidat-veut-construire-de-nouveaux-reacteurs-nucleaires:p8",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-construire-de-nouveaux-reacteurs-nucleaires/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut construire de nouveaux réacteurs nucléaires ?",
-      "section": "Questions voisines",
-      "paragraph": 8,
-      "text": "Quel candidat défend une écologie pragmatique et non punitive ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-construire-de-nouveaux-reacteurs-nucleaires:p9",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-construire-de-nouveaux-reacteurs-nucleaires/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut construire de nouveaux réacteurs nucléaires ?",
-      "section": "Questions voisines",
-      "paragraph": 9,
-      "text": "Quel candidat veut supprimer les subventions aux entreprises ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-construire-de-nouveaux-reacteurs-nucleaires:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-construire-de-nouveaux-reacteurs-nucleaires/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut construire de nouveaux réacteurs nucléaires ?",
-      "section": "Questions voisines",
-      "paragraph": 10,
-      "text": "Quel est le projet de David Lisnard pour la France ?"
-    },
-    {
       "id": "questions:questions-quel-candidat-propose-de-construire-des-places-de-prison:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-construire-des-places-de-prison/",
       "kind": "questions",
@@ -5076,42 +4257,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 7,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-de-construire-des-places-de-prison:p8",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-construire-des-places-de-prison/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose de construire des places de prison ?",
-      "section": "Questions voisines",
-      "paragraph": 8,
-      "text": "Quelles sont les propositions de David Lisnard sur la sécurité ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-de-construire-des-places-de-prison:p9",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-construire-des-places-de-prison/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose de construire des places de prison ?",
-      "section": "Questions voisines",
-      "paragraph": 9,
-      "text": "Quel est le constat de David Lisnard sur la justice ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-de-construire-des-places-de-prison:p10",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-construire-des-places-de-prison/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose de construire des places de prison ?",
-      "section": "Questions voisines",
-      "paragraph": 10,
-      "text": "Quel candidat veut que les peines soient réellement exécutées ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-de-construire-des-places-de-prison:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-construire-des-places-de-prison/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose de construire des places de prison ?",
-      "section": "Questions voisines",
-      "paragraph": 11,
-      "text": "Quel candidat propose de redonner des moyens aux forces de l’ordre ?"
     },
     {
       "id": "questions:questions-quel-candidat-veut-supprimer-des-normes-et-des-agences-de-l-etat:p1",
@@ -5211,42 +4356,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 11,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-supprimer-des-normes-et-des-agences-de-l-etat:p12",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-des-normes-et-des-agences-de-l-etat/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut supprimer des normes et des agences de l’État ?",
-      "section": "Questions voisines",
-      "paragraph": 12,
-      "text": "Que veut faire David Lisnard contre l’excès de normes ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-supprimer-des-normes-et-des-agences-de-l-etat:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-des-normes-et-des-agences-de-l-etat/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut supprimer des normes et des agences de l’État ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "Où passe l’argent public selon David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-supprimer-des-normes-et-des-agences-de-l-etat:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-des-normes-et-des-agences-de-l-etat/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut supprimer des normes et des agences de l’État ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Quel candidat veut donner plus de pouvoir aux maires et aux régions ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-supprimer-des-normes-et-des-agences-de-l-etat:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-des-normes-et-des-agences-de-l-etat/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut supprimer des normes et des agences de l’État ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Quel candidat veut réduire le nombre de fonctionnaires ?"
     },
     {
       "id": "questions:questions-quel-candidat-defend-une-ecologie-pragmatique-et-non-punitive:p1",
@@ -5366,42 +4475,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quel-candidat-defend-une-ecologie-pragmatique-et-non-punitive:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-defend-une-ecologie-pragmatique-et-non-punitive/",
-      "kind": "questions",
-      "page_title": "Quel candidat défend une écologie pragmatique et non punitive ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Que veut faire David Lisnard contre l’excès de normes ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-defend-une-ecologie-pragmatique-et-non-punitive:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-defend-une-ecologie-pragmatique-et-non-punitive/",
-      "kind": "questions",
-      "page_title": "Quel candidat défend une écologie pragmatique et non punitive ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Que propose David Lisnard face à la dette publique ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-defend-une-ecologie-pragmatique-et-non-punitive:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-defend-une-ecologie-pragmatique-et-non-punitive/",
-      "kind": "questions",
-      "page_title": "Quel candidat défend une écologie pragmatique et non punitive ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Quel candidat veut donner plus de pouvoir aux maires et aux régions ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-defend-une-ecologie-pragmatique-et-non-punitive:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-defend-une-ecologie-pragmatique-et-non-punitive/",
-      "kind": "questions",
-      "page_title": "Quel candidat défend une écologie pragmatique et non punitive ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Quel candidat propose une réforme de l’hôpital public ?"
-    },
-    {
       "id": "questions:questions-quel-candidat-propose-une-reforme-de-l-hopital-public:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-une-reforme-de-l-hopital-public/",
       "kind": "questions",
@@ -5517,42 +4590,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 13,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-une-reforme-de-l-hopital-public:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-une-reforme-de-l-hopital-public/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose une réforme de l’hôpital public ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Quel est le diagnostic de David Lisnard sur l’hôpital ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-une-reforme-de-l-hopital-public:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-une-reforme-de-l-hopital-public/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose une réforme de l’hôpital public ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Comment David Lisnard compte-t-il lutter contre les déserts médicaux ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-une-reforme-de-l-hopital-public:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-une-reforme-de-l-hopital-public/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose une réforme de l’hôpital public ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Pourquoi la France dépense-t-elle plus que ses voisins pour une santé moins accessible ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-une-reforme-de-l-hopital-public:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-une-reforme-de-l-hopital-public/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose une réforme de l’hôpital public ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Quel candidat défend une écologie pragmatique et non punitive ?"
     },
     {
       "id": "questions:questions-quel-candidat-veut-maitriser-l-immigration-sans-demagogie:p1",
@@ -5672,42 +4709,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quel-candidat-veut-maitriser-l-immigration-sans-demagogie:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-maitriser-l-immigration-sans-demagogie/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut maîtriser l’immigration ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Que propose David Lisnard sur l’immigration ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-maitriser-l-immigration-sans-demagogie:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-maitriser-l-immigration-sans-demagogie/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut maîtriser l’immigration ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "David Lisnard veut-il rétablir le délit de séjour irrégulier ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-maitriser-l-immigration-sans-demagogie:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-maitriser-l-immigration-sans-demagogie/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut maîtriser l’immigration ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Quel candidat propose une réforme de l’hôpital public ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-maitriser-l-immigration-sans-demagogie:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-maitriser-l-immigration-sans-demagogie/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut maîtriser l’immigration ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Quel candidat veut donner plus de pouvoir aux maires et aux régions ?"
-    },
-    {
       "id": "questions:questions-quel-candidat-propose-de-redonner-des-moyens-aux-forces-de-l-ordre:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-redonner-des-moyens-aux-forces-de-l-ordre/",
       "kind": "questions",
@@ -5823,42 +4824,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 13,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-de-redonner-des-moyens-aux-forces-de-l-ordre:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-redonner-des-moyens-aux-forces-de-l-ordre/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose de redonner des moyens aux forces de l’ordre ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Quelles sont les propositions de David Lisnard sur la sécurité ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-de-redonner-des-moyens-aux-forces-de-l-ordre:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-redonner-des-moyens-aux-forces-de-l-ordre/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose de redonner des moyens aux forces de l’ordre ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Que propose David Lisnard face au narcotrafic ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-de-redonner-des-moyens-aux-forces-de-l-ordre:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-redonner-des-moyens-aux-forces-de-l-ordre/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose de redonner des moyens aux forces de l’ordre ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Quel est le constat de David Lisnard sur la justice ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-propose-de-redonner-des-moyens-aux-forces-de-l-ordre:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-redonner-des-moyens-aux-forces-de-l-ordre/",
-      "kind": "questions",
-      "page_title": "Quel candidat propose de redonner des moyens aux forces de l’ordre ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Quel candidat veut maîtriser l’immigration ?"
     },
     {
       "id": "questions:questions-quel-candidat-veut-donner-plus-de-pouvoir-aux-maires:p1",
@@ -5978,42 +4943,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quel-candidat-veut-donner-plus-de-pouvoir-aux-maires:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-donner-plus-de-pouvoir-aux-maires/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut donner plus de pouvoir aux maires et aux régions ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Que propose David Lisnard pour décentraliser la France ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-donner-plus-de-pouvoir-aux-maires:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-donner-plus-de-pouvoir-aux-maires/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut donner plus de pouvoir aux maires et aux régions ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Pourquoi David Lisnard dit-il que la commune est l’institution la plus efficace ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-donner-plus-de-pouvoir-aux-maires:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-donner-plus-de-pouvoir-aux-maires/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut donner plus de pouvoir aux maires et aux régions ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Que veut faire David Lisnard contre l’excès de normes ?"
-    },
-    {
-      "id": "questions:questions-quel-candidat-veut-donner-plus-de-pouvoir-aux-maires:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-donner-plus-de-pouvoir-aux-maires/",
-      "kind": "questions",
-      "page_title": "Quel candidat veut donner plus de pouvoir aux maires et aux régions ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Quel candidat propose de redonner des moyens aux forces de l’ordre ?"
-    },
-    {
       "id": "questions:questions-quel-est-le-projet-de-david-lisnard-pour-la-france:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-projet-de-david-lisnard-pour-la-france/",
       "kind": "questions",
@@ -6131,42 +5060,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quel-est-le-projet-de-david-lisnard-pour-la-france:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-projet-de-david-lisnard-pour-la-france/",
-      "kind": "questions",
-      "page_title": "Quel est le projet de David Lisnard pour la France ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Pourquoi David Lisnard parle-t-il d’« État-performance » contre « État-providence » ?"
-    },
-    {
-      "id": "questions:questions-quel-est-le-projet-de-david-lisnard-pour-la-france:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-projet-de-david-lisnard-pour-la-france/",
-      "kind": "questions",
-      "page_title": "Quel est le projet de David Lisnard pour la France ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Que propose David Lisnard pour le pouvoir d’achat ?"
-    },
-    {
-      "id": "questions:questions-quel-est-le-projet-de-david-lisnard-pour-la-france:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-projet-de-david-lisnard-pour-la-france/",
-      "kind": "questions",
-      "page_title": "Quel est le projet de David Lisnard pour la France ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Quelles sont les propositions de David Lisnard pour l’école ?"
-    },
-    {
-      "id": "questions:questions-quel-est-le-projet-de-david-lisnard-pour-la-france:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-projet-de-david-lisnard-pour-la-france/",
-      "kind": "questions",
-      "page_title": "Quel est le projet de David Lisnard pour la France ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Où trouver le programme de David Lisnard ?"
-    },
-    {
       "id": "questions:questions-quel-est-le-parti-de-david-lisnard:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-parti-de-david-lisnard/",
       "kind": "questions",
@@ -6273,33 +5166,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 12,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-quel-est-le-parti-de-david-lisnard:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-parti-de-david-lisnard/",
-      "kind": "questions",
-      "page_title": "Quel est le parti de David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "David Lisnard est-il candidat à la présidentielle 2027 ?"
-    },
-    {
-      "id": "questions:questions-quel-est-le-parti-de-david-lisnard:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-parti-de-david-lisnard/",
-      "kind": "questions",
-      "page_title": "Quel est le parti de David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Quel est le projet de David Lisnard pour la France ?"
-    },
-    {
-      "id": "questions:questions-quel-est-le-parti-de-david-lisnard:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-parti-de-david-lisnard/",
-      "kind": "questions",
-      "page_title": "Quel est le parti de David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Combien d’adhérents compte Nouvelle Énergie, le parti de David Lisnard ?"
     },
     {
       "id": "questions:questions-david-lisnard-est-il-candidat-a-la-presidentielle-2027:p1",
@@ -6419,15 +5285,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-david-lisnard-est-il-candidat-a-la-presidentielle-2027:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-est-il-candidat-a-la-presidentielle-2027/",
-      "kind": "questions",
-      "page_title": "David Lisnard est-il candidat à la présidentielle 2027 ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Quel est le projet de David Lisnard pour la France ?"
-    },
-    {
       "id": "questions:questions-quel-est-le-bilan-de-david-lisnard-comme-maire-de-cannes:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-bilan-de-david-lisnard-comme-maire-de-cannes/",
       "kind": "questions",
@@ -6545,33 +5402,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quel-est-le-bilan-de-david-lisnard-comme-maire-de-cannes:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-bilan-de-david-lisnard-comme-maire-de-cannes/",
-      "kind": "questions",
-      "page_title": "Quel est le bilan de David Lisnard comme maire de Cannes ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Que propose David Lisnard face à la dette publique ?"
-    },
-    {
-      "id": "questions:questions-quel-est-le-bilan-de-david-lisnard-comme-maire-de-cannes:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-bilan-de-david-lisnard-comme-maire-de-cannes/",
-      "kind": "questions",
-      "page_title": "Quel est le bilan de David Lisnard comme maire de Cannes ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Pourquoi David Lisnard dit-il que la commune est l’institution la plus efficace ?"
-    },
-    {
-      "id": "questions:questions-quel-est-le-bilan-de-david-lisnard-comme-maire-de-cannes:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-bilan-de-david-lisnard-comme-maire-de-cannes/",
-      "kind": "questions",
-      "page_title": "Quel est le bilan de David Lisnard comme maire de Cannes ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Quelles économies propose David Lisnard ?"
-    },
-    {
       "id": "questions:questions-qui-est-david-lisnard:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/qui-est-david-lisnard/",
       "kind": "questions",
@@ -6678,33 +5508,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 12,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-qui-est-david-lisnard:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/qui-est-david-lisnard/",
-      "kind": "questions",
-      "page_title": "Qui est David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "Quel est le bilan de David Lisnard comme maire de Cannes ?"
-    },
-    {
-      "id": "questions:questions-qui-est-david-lisnard:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/qui-est-david-lisnard/",
-      "kind": "questions",
-      "page_title": "Qui est David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "David Lisnard est-il candidat à la présidentielle 2027 ?"
-    },
-    {
-      "id": "questions:questions-qui-est-david-lisnard:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/qui-est-david-lisnard/",
-      "kind": "questions",
-      "page_title": "Qui est David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Quel est le projet de David Lisnard pour la France ?"
     },
     {
       "id": "questions:questions-quelles-sont-les-propositions-de-david-lisnard-pour-l-ecole:p1",
@@ -6824,42 +5627,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quelles-sont-les-propositions-de-david-lisnard-pour-l-ecole:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/quelles-sont-les-propositions-de-david-lisnard-pour-l-ecole/",
-      "kind": "questions",
-      "page_title": "Quelles sont les propositions de David Lisnard pour l’école ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Que propose David Lisnard face à la dette publique ?"
-    },
-    {
-      "id": "questions:questions-quelles-sont-les-propositions-de-david-lisnard-pour-l-ecole:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/quelles-sont-les-propositions-de-david-lisnard-pour-l-ecole/",
-      "kind": "questions",
-      "page_title": "Quelles sont les propositions de David Lisnard pour l’école ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Pourquoi David Lisnard dit-il que la commune est l’institution la plus efficace ?"
-    },
-    {
-      "id": "questions:questions-quelles-sont-les-propositions-de-david-lisnard-pour-l-ecole:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/quelles-sont-les-propositions-de-david-lisnard-pour-l-ecole/",
-      "kind": "questions",
-      "page_title": "Quelles sont les propositions de David Lisnard pour l’école ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Quel est le projet de David Lisnard pour la France ?"
-    },
-    {
-      "id": "questions:questions-quelles-sont-les-propositions-de-david-lisnard-pour-l-ecole:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/quelles-sont-les-propositions-de-david-lisnard-pour-l-ecole/",
-      "kind": "questions",
-      "page_title": "Quelles sont les propositions de David Lisnard pour l’école ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Quel candidat veut supprimer la carte scolaire ?"
-    },
-    {
       "id": "questions:questions-pourquoi-david-lisnard-dit-il-que-la-commune-est-l-institution-la-plus-efficace:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-david-lisnard-dit-il-que-la-commune-est-l-institution-la-plus-efficace/",
       "kind": "questions",
@@ -6948,51 +5715,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 10,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-pourquoi-david-lisnard-dit-il-que-la-commune-est-l-institution-la-plus-efficace:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-david-lisnard-dit-il-que-la-commune-est-l-institution-la-plus-efficace/",
-      "kind": "questions",
-      "page_title": "Pourquoi David Lisnard dit-il que la commune est l’institution la plus efficace ?",
-      "section": "Questions voisines",
-      "paragraph": 11,
-      "text": "Que propose David Lisnard pour décentraliser la France ?"
-    },
-    {
-      "id": "questions:questions-pourquoi-david-lisnard-dit-il-que-la-commune-est-l-institution-la-plus-efficace:p12",
-      "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-david-lisnard-dit-il-que-la-commune-est-l-institution-la-plus-efficace/",
-      "kind": "questions",
-      "page_title": "Pourquoi David Lisnard dit-il que la commune est l’institution la plus efficace ?",
-      "section": "Questions voisines",
-      "paragraph": 12,
-      "text": "Quel est le bilan de David Lisnard comme maire de Cannes ?"
-    },
-    {
-      "id": "questions:questions-pourquoi-david-lisnard-dit-il-que-la-commune-est-l-institution-la-plus-efficace:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-david-lisnard-dit-il-que-la-commune-est-l-institution-la-plus-efficace/",
-      "kind": "questions",
-      "page_title": "Pourquoi David Lisnard dit-il que la commune est l’institution la plus efficace ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "Que propose David Lisnard face à la dette publique ?"
-    },
-    {
-      "id": "questions:questions-pourquoi-david-lisnard-dit-il-que-la-commune-est-l-institution-la-plus-efficace:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-david-lisnard-dit-il-que-la-commune-est-l-institution-la-plus-efficace/",
-      "kind": "questions",
-      "page_title": "Pourquoi David Lisnard dit-il que la commune est l’institution la plus efficace ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Quelles sont les propositions de David Lisnard pour l’école ?"
-    },
-    {
-      "id": "questions:questions-pourquoi-david-lisnard-dit-il-que-la-commune-est-l-institution-la-plus-efficace:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-david-lisnard-dit-il-que-la-commune-est-l-institution-la-plus-efficace/",
-      "kind": "questions",
-      "page_title": "Pourquoi David Lisnard dit-il que la commune est l’institution la plus efficace ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Quel candidat veut donner plus de pouvoir aux maires et aux régions ?"
     },
     {
       "id": "questions:questions-que-veut-faire-david-lisnard-contre-l-exces-de-normes:p1",
@@ -7092,42 +5814,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 11,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-que-veut-faire-david-lisnard-contre-l-exces-de-normes:p12",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-veut-faire-david-lisnard-contre-l-exces-de-normes/",
-      "kind": "questions",
-      "page_title": "Que veut faire David Lisnard contre l’excès de normes ?",
-      "section": "Questions voisines",
-      "paragraph": 12,
-      "text": "Que propose David Lisnard pour décentraliser la France ?"
-    },
-    {
-      "id": "questions:questions-que-veut-faire-david-lisnard-contre-l-exces-de-normes:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-veut-faire-david-lisnard-contre-l-exces-de-normes/",
-      "kind": "questions",
-      "page_title": "Que veut faire David Lisnard contre l’excès de normes ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "Où passe l’argent public selon David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-que-veut-faire-david-lisnard-contre-l-exces-de-normes:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-veut-faire-david-lisnard-contre-l-exces-de-normes/",
-      "kind": "questions",
-      "page_title": "Que veut faire David Lisnard contre l’excès de normes ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Quelles économies propose David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-que-veut-faire-david-lisnard-contre-l-exces-de-normes:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-veut-faire-david-lisnard-contre-l-exces-de-normes/",
-      "kind": "questions",
-      "page_title": "Que veut faire David Lisnard contre l’excès de normes ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Quel candidat défend une écologie pragmatique et non punitive ?"
     },
     {
       "id": "questions:questions-que-propose-david-lisnard-pour-decentraliser-la-france:p1",
@@ -7247,51 +5933,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-que-propose-david-lisnard-pour-decentraliser-la-france:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-pour-decentraliser-la-france/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard pour décentraliser la France ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Que veut faire David Lisnard contre l’excès de normes ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-pour-decentraliser-la-france:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-pour-decentraliser-la-france/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard pour décentraliser la France ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Pourquoi David Lisnard dit-il que la commune est l’institution la plus efficace ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-pour-decentraliser-la-france:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-pour-decentraliser-la-france/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard pour décentraliser la France ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Où passe l’argent public selon David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-pour-decentraliser-la-france:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-pour-decentraliser-la-france/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard pour décentraliser la France ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Quelles sont les propositions de David Lisnard sur la sécurité ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-pour-decentraliser-la-france:p18",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-pour-decentraliser-la-france/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard pour décentraliser la France ?",
-      "section": "Questions voisines",
-      "paragraph": 18,
-      "text": "Quel candidat veut donner plus de pouvoir aux maires et aux régions ?"
-    },
-    {
       "id": "questions:questions-ou-passe-l-argent-public-selon-david-lisnard:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/ou-passe-l-argent-public-selon-david-lisnard/",
       "kind": "questions",
@@ -7409,42 +6050,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-ou-passe-l-argent-public-selon-david-lisnard:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/ou-passe-l-argent-public-selon-david-lisnard/",
-      "kind": "questions",
-      "page_title": "Où passe l’argent public selon David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Quelles économies propose David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-ou-passe-l-argent-public-selon-david-lisnard:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/ou-passe-l-argent-public-selon-david-lisnard/",
-      "kind": "questions",
-      "page_title": "Où passe l’argent public selon David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Que veut faire David Lisnard contre l’excès de normes ?"
-    },
-    {
-      "id": "questions:questions-ou-passe-l-argent-public-selon-david-lisnard:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/ou-passe-l-argent-public-selon-david-lisnard/",
-      "kind": "questions",
-      "page_title": "Où passe l’argent public selon David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Pourquoi David Lisnard parle-t-il d’« État-performance » contre « État-providence » ?"
-    },
-    {
-      "id": "questions:questions-ou-passe-l-argent-public-selon-david-lisnard:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/ou-passe-l-argent-public-selon-david-lisnard/",
-      "kind": "questions",
-      "page_title": "Où passe l’argent public selon David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Que propose David Lisnard face à la dette publique ?"
-    },
-    {
       "id": "questions:questions-pourquoi-david-lisnard-parle-t-il-d-etat-performance-contre-etat-providence:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-david-lisnard-parle-t-il-d-etat-performance-contre-etat-providence/",
       "kind": "questions",
@@ -7533,42 +6138,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 10,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-pourquoi-david-lisnard-parle-t-il-d-etat-performance-contre-etat-providence:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-david-lisnard-parle-t-il-d-etat-performance-contre-etat-providence/",
-      "kind": "questions",
-      "page_title": "Pourquoi David Lisnard parle-t-il d’« État-performance » contre « État-providence » ?",
-      "section": "Questions voisines",
-      "paragraph": 11,
-      "text": "Où passe l’argent public selon David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-pourquoi-david-lisnard-parle-t-il-d-etat-performance-contre-etat-providence:p12",
-      "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-david-lisnard-parle-t-il-d-etat-performance-contre-etat-providence/",
-      "kind": "questions",
-      "page_title": "Pourquoi David Lisnard parle-t-il d’« État-performance » contre « État-providence » ?",
-      "section": "Questions voisines",
-      "paragraph": 12,
-      "text": "Que propose David Lisnard face à la dette publique ?"
-    },
-    {
-      "id": "questions:questions-pourquoi-david-lisnard-parle-t-il-d-etat-performance-contre-etat-providence:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-david-lisnard-parle-t-il-d-etat-performance-contre-etat-providence/",
-      "kind": "questions",
-      "page_title": "Pourquoi David Lisnard parle-t-il d’« État-performance » contre « État-providence » ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "Quel est le projet de David Lisnard pour la France ?"
-    },
-    {
-      "id": "questions:questions-pourquoi-david-lisnard-parle-t-il-d-etat-performance-contre-etat-providence:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-david-lisnard-parle-t-il-d-etat-performance-contre-etat-providence/",
-      "kind": "questions",
-      "page_title": "Pourquoi David Lisnard parle-t-il d’« État-performance » contre « État-providence » ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Pourquoi la France dépense-t-elle plus que ses voisins pour une santé moins accessible ?"
     },
     {
       "id": "questions:questions-que-propose-david-lisnard-face-a-la-dette-publique:p1",
@@ -7688,42 +6257,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-que-propose-david-lisnard-face-a-la-dette-publique:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-face-a-la-dette-publique/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard face à la dette publique ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Quelles économies propose David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-face-a-la-dette-publique:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-face-a-la-dette-publique/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard face à la dette publique ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Que ferait David Lisnard des 200 milliards d’économies annoncés ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-face-a-la-dette-publique:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-face-a-la-dette-publique/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard face à la dette publique ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Où passe l’argent public selon David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-face-a-la-dette-publique:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-face-a-la-dette-publique/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard face à la dette publique ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Quel est le bilan de David Lisnard comme maire de Cannes ?"
-    },
-    {
       "id": "questions:questions-quel-est-le-constat-de-david-lisnard-sur-la-justice:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-constat-de-david-lisnard-sur-la-justice/",
       "kind": "questions",
@@ -7839,42 +6372,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 13,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-quel-est-le-constat-de-david-lisnard-sur-la-justice:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-constat-de-david-lisnard-sur-la-justice/",
-      "kind": "questions",
-      "page_title": "Quel est le constat de David Lisnard sur la justice ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Que propose David Lisnard face à la dette publique ?"
-    },
-    {
-      "id": "questions:questions-quel-est-le-constat-de-david-lisnard-sur-la-justice:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-constat-de-david-lisnard-sur-la-justice/",
-      "kind": "questions",
-      "page_title": "Quel est le constat de David Lisnard sur la justice ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Quelles sont les propositions de David Lisnard sur la sécurité ?"
-    },
-    {
-      "id": "questions:questions-quel-est-le-constat-de-david-lisnard-sur-la-justice:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-constat-de-david-lisnard-sur-la-justice/",
-      "kind": "questions",
-      "page_title": "Quel est le constat de David Lisnard sur la justice ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Que propose David Lisnard face au narcotrafic ?"
-    },
-    {
-      "id": "questions:questions-quel-est-le-constat-de-david-lisnard-sur-la-justice:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-constat-de-david-lisnard-sur-la-justice/",
-      "kind": "questions",
-      "page_title": "Quel est le constat de David Lisnard sur la justice ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Où passe l’argent public selon David Lisnard ?"
     },
     {
       "id": "questions:questions-que-propose-david-lisnard-face-au-narcotrafic:p1",
@@ -7994,42 +6491,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-que-propose-david-lisnard-face-au-narcotrafic:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-face-au-narcotrafic/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard face au narcotrafic ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Quelles sont les propositions de David Lisnard sur la sécurité ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-face-au-narcotrafic:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-face-au-narcotrafic/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard face au narcotrafic ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Quel est le constat de David Lisnard sur la justice ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-face-au-narcotrafic:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-face-au-narcotrafic/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard face au narcotrafic ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Que propose David Lisnard sur l’immigration ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-face-au-narcotrafic:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-face-au-narcotrafic/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard face au narcotrafic ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Quel candidat propose de redonner des moyens aux forces de l’ordre ?"
-    },
-    {
       "id": "questions:questions-david-lisnard-veut-il-retablir-le-delit-de-sejour-irregulier:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-veut-il-retablir-le-delit-de-sejour-irregulier/",
       "kind": "questions",
@@ -8127,42 +6588,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 11,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-david-lisnard-veut-il-retablir-le-delit-de-sejour-irregulier:p12",
-      "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-veut-il-retablir-le-delit-de-sejour-irregulier/",
-      "kind": "questions",
-      "page_title": "David Lisnard veut-il rétablir le délit de séjour irrégulier ?",
-      "section": "Questions voisines",
-      "paragraph": 12,
-      "text": "Que propose David Lisnard sur l’immigration ?"
-    },
-    {
-      "id": "questions:questions-david-lisnard-veut-il-retablir-le-delit-de-sejour-irregulier:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-veut-il-retablir-le-delit-de-sejour-irregulier/",
-      "kind": "questions",
-      "page_title": "David Lisnard veut-il rétablir le délit de séjour irrégulier ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "Quel est le constat de David Lisnard sur la justice ?"
-    },
-    {
-      "id": "questions:questions-david-lisnard-veut-il-retablir-le-delit-de-sejour-irregulier:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-veut-il-retablir-le-delit-de-sejour-irregulier/",
-      "kind": "questions",
-      "page_title": "David Lisnard veut-il rétablir le délit de séjour irrégulier ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Quelles sont les propositions de David Lisnard sur la sécurité ?"
-    },
-    {
-      "id": "questions:questions-david-lisnard-veut-il-retablir-le-delit-de-sejour-irregulier:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-veut-il-retablir-le-delit-de-sejour-irregulier/",
-      "kind": "questions",
-      "page_title": "David Lisnard veut-il rétablir le délit de séjour irrégulier ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Quel candidat veut maîtriser l’immigration ?"
     },
     {
       "id": "questions:questions-que-propose-david-lisnard-sur-l-immigration:p1",
@@ -8282,42 +6707,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-que-propose-david-lisnard-sur-l-immigration:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-sur-l-immigration/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard sur l’immigration ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "David Lisnard veut-il rétablir le délit de séjour irrégulier ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-sur-l-immigration:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-sur-l-immigration/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard sur l’immigration ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Quelles sont les propositions de David Lisnard sur la sécurité ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-sur-l-immigration:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-sur-l-immigration/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard sur l’immigration ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Quel est le constat de David Lisnard sur la justice ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-sur-l-immigration:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-sur-l-immigration/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard sur l’immigration ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Quel candidat veut maîtriser l’immigration ?"
-    },
-    {
       "id": "questions:questions-quelles-sont-les-propositions-de-david-lisnard-sur-la-securite:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quelles-sont-les-propositions-de-david-lisnard-sur-la-securite/",
       "kind": "questions",
@@ -8435,51 +6824,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quelles-sont-les-propositions-de-david-lisnard-sur-la-securite:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/quelles-sont-les-propositions-de-david-lisnard-sur-la-securite/",
-      "kind": "questions",
-      "page_title": "Quelles sont les propositions de David Lisnard sur la sécurité ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Que propose David Lisnard face au narcotrafic ?"
-    },
-    {
-      "id": "questions:questions-quelles-sont-les-propositions-de-david-lisnard-sur-la-securite:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/quelles-sont-les-propositions-de-david-lisnard-sur-la-securite/",
-      "kind": "questions",
-      "page_title": "Quelles sont les propositions de David Lisnard sur la sécurité ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Quel est le constat de David Lisnard sur la justice ?"
-    },
-    {
-      "id": "questions:questions-quelles-sont-les-propositions-de-david-lisnard-sur-la-securite:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/quelles-sont-les-propositions-de-david-lisnard-sur-la-securite/",
-      "kind": "questions",
-      "page_title": "Quelles sont les propositions de David Lisnard sur la sécurité ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Que propose David Lisnard sur l’immigration ?"
-    },
-    {
-      "id": "questions:questions-quelles-sont-les-propositions-de-david-lisnard-sur-la-securite:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/quelles-sont-les-propositions-de-david-lisnard-sur-la-securite/",
-      "kind": "questions",
-      "page_title": "Quelles sont les propositions de David Lisnard sur la sécurité ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Que propose David Lisnard pour décentraliser la France ?"
-    },
-    {
-      "id": "questions:questions-quelles-sont-les-propositions-de-david-lisnard-sur-la-securite:p18",
-      "url": "https://www.unenouvelleenergie.fr/questions/quelles-sont-les-propositions-de-david-lisnard-sur-la-securite/",
-      "kind": "questions",
-      "page_title": "Quelles sont les propositions de David Lisnard sur la sécurité ?",
-      "section": "Questions voisines",
-      "paragraph": 18,
-      "text": "Quel candidat propose de redonner des moyens aux forces de l’ordre ?"
-    },
-    {
       "id": "questions:questions-quel-age-de-depart-a-la-retraite-david-lisnard-defend-il:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-age-de-depart-a-la-retraite-david-lisnard-defend-il/",
       "kind": "questions",
@@ -8570,33 +6914,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quel-age-de-depart-a-la-retraite-david-lisnard-defend-il:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-age-de-depart-a-la-retraite-david-lisnard-defend-il/",
-      "kind": "questions",
-      "page_title": "Quel âge de départ à la retraite David Lisnard défend-il ?",
-      "section": "Questions voisines",
-      "paragraph": 11,
-      "text": "David Lisnard est-il favorable à la retraite par capitalisation ?"
-    },
-    {
-      "id": "questions:questions-quel-age-de-depart-a-la-retraite-david-lisnard-defend-il:p12",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-age-de-depart-a-la-retraite-david-lisnard-defend-il/",
-      "kind": "questions",
-      "page_title": "Quel âge de départ à la retraite David Lisnard défend-il ?",
-      "section": "Questions voisines",
-      "paragraph": 12,
-      "text": "Que pense David Lisnard du système de retraite par répartition ?"
-    },
-    {
-      "id": "questions:questions-quel-age-de-depart-a-la-retraite-david-lisnard-defend-il:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-age-de-depart-a-la-retraite-david-lisnard-defend-il/",
-      "kind": "questions",
-      "page_title": "Quel âge de départ à la retraite David Lisnard défend-il ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "Quelles économies propose David Lisnard ?"
-    },
-    {
       "id": "questions:questions-david-lisnard-est-il-favorable-a-la-retraite-par-capitalisation:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-est-il-favorable-a-la-retraite-par-capitalisation/",
       "kind": "questions",
@@ -8685,42 +7002,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 10,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-david-lisnard-est-il-favorable-a-la-retraite-par-capitalisation:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-est-il-favorable-a-la-retraite-par-capitalisation/",
-      "kind": "questions",
-      "page_title": "David Lisnard est-il favorable à la retraite par capitalisation ?",
-      "section": "Questions voisines",
-      "paragraph": 11,
-      "text": "Que pense David Lisnard du système de retraite par répartition ?"
-    },
-    {
-      "id": "questions:questions-david-lisnard-est-il-favorable-a-la-retraite-par-capitalisation:p12",
-      "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-est-il-favorable-a-la-retraite-par-capitalisation/",
-      "kind": "questions",
-      "page_title": "David Lisnard est-il favorable à la retraite par capitalisation ?",
-      "section": "Questions voisines",
-      "paragraph": 12,
-      "text": "Quel âge de départ à la retraite David Lisnard défend-il ?"
-    },
-    {
-      "id": "questions:questions-david-lisnard-est-il-favorable-a-la-retraite-par-capitalisation:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-est-il-favorable-a-la-retraite-par-capitalisation/",
-      "kind": "questions",
-      "page_title": "David Lisnard est-il favorable à la retraite par capitalisation ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "Quelles économies propose David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-david-lisnard-est-il-favorable-a-la-retraite-par-capitalisation:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-est-il-favorable-a-la-retraite-par-capitalisation/",
-      "kind": "questions",
-      "page_title": "David Lisnard est-il favorable à la retraite par capitalisation ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Quel candidat propose la retraite par capitalisation ?"
     },
     {
       "id": "questions:questions-que-pense-david-lisnard-du-systeme-de-retraite-par-repartition:p1",
@@ -8840,33 +7121,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-que-pense-david-lisnard-du-systeme-de-retraite-par-repartition:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-pense-david-lisnard-du-systeme-de-retraite-par-repartition/",
-      "kind": "questions",
-      "page_title": "Que pense David Lisnard du système de retraite par répartition ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "David Lisnard est-il favorable à la retraite par capitalisation ?"
-    },
-    {
-      "id": "questions:questions-que-pense-david-lisnard-du-systeme-de-retraite-par-repartition:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-pense-david-lisnard-du-systeme-de-retraite-par-repartition/",
-      "kind": "questions",
-      "page_title": "Que pense David Lisnard du système de retraite par répartition ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Quel âge de départ à la retraite David Lisnard défend-il ?"
-    },
-    {
-      "id": "questions:questions-que-pense-david-lisnard-du-systeme-de-retraite-par-repartition:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-pense-david-lisnard-du-systeme-de-retraite-par-repartition/",
-      "kind": "questions",
-      "page_title": "Que pense David Lisnard du système de retraite par répartition ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Quelles économies propose David Lisnard ?"
-    },
-    {
       "id": "questions:questions-pourquoi-la-france-depense-t-elle-plus-que-ses-voisins-pour-une-sante-moins-accessible:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-la-france-depense-t-elle-plus-que-ses-voisins-pour-une-sante-moins-accessible/",
       "kind": "questions",
@@ -8955,33 +7209,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 10,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-pourquoi-la-france-depense-t-elle-plus-que-ses-voisins-pour-une-sante-moins-accessible:p11",
-      "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-la-france-depense-t-elle-plus-que-ses-voisins-pour-une-sante-moins-accessible/",
-      "kind": "questions",
-      "page_title": "Pourquoi la France dépense-t-elle plus que ses voisins pour une santé moins accessible ?",
-      "section": "Questions voisines",
-      "paragraph": 11,
-      "text": "Quel est le diagnostic de David Lisnard sur l’hôpital ?"
-    },
-    {
-      "id": "questions:questions-pourquoi-la-france-depense-t-elle-plus-que-ses-voisins-pour-une-sante-moins-accessible:p12",
-      "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-la-france-depense-t-elle-plus-que-ses-voisins-pour-une-sante-moins-accessible/",
-      "kind": "questions",
-      "page_title": "Pourquoi la France dépense-t-elle plus que ses voisins pour une santé moins accessible ?",
-      "section": "Questions voisines",
-      "paragraph": 12,
-      "text": "Où passe l’argent public selon David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-pourquoi-la-france-depense-t-elle-plus-que-ses-voisins-pour-une-sante-moins-accessible:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/pourquoi-la-france-depense-t-elle-plus-que-ses-voisins-pour-une-sante-moins-accessible/",
-      "kind": "questions",
-      "page_title": "Pourquoi la France dépense-t-elle plus que ses voisins pour une santé moins accessible ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "Pourquoi David Lisnard parle-t-il d’« État-performance » contre « État-providence » ?"
     },
     {
       "id": "questions:questions-comment-david-lisnard-compte-t-il-lutter-contre-les-deserts-medicaux:p1",
@@ -9101,42 +7328,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-comment-david-lisnard-compte-t-il-lutter-contre-les-deserts-medicaux:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/comment-david-lisnard-compte-t-il-lutter-contre-les-deserts-medicaux/",
-      "kind": "questions",
-      "page_title": "Comment David Lisnard compte-t-il lutter contre les déserts médicaux ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Quel est le diagnostic de David Lisnard sur l’hôpital ?"
-    },
-    {
-      "id": "questions:questions-comment-david-lisnard-compte-t-il-lutter-contre-les-deserts-medicaux:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/comment-david-lisnard-compte-t-il-lutter-contre-les-deserts-medicaux/",
-      "kind": "questions",
-      "page_title": "Comment David Lisnard compte-t-il lutter contre les déserts médicaux ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Pourquoi la France dépense-t-elle plus que ses voisins pour une santé moins accessible ?"
-    },
-    {
-      "id": "questions:questions-comment-david-lisnard-compte-t-il-lutter-contre-les-deserts-medicaux:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/comment-david-lisnard-compte-t-il-lutter-contre-les-deserts-medicaux/",
-      "kind": "questions",
-      "page_title": "Comment David Lisnard compte-t-il lutter contre les déserts médicaux ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Que propose David Lisnard pour décentraliser la France ?"
-    },
-    {
-      "id": "questions:questions-comment-david-lisnard-compte-t-il-lutter-contre-les-deserts-medicaux:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/comment-david-lisnard-compte-t-il-lutter-contre-les-deserts-medicaux/",
-      "kind": "questions",
-      "page_title": "Comment David Lisnard compte-t-il lutter contre les déserts médicaux ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Quel candidat propose une réforme de l’hôpital public ?"
-    },
-    {
       "id": "questions:questions-quel-est-le-diagnostic-de-david-lisnard-sur-l-hopital:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-diagnostic-de-david-lisnard-sur-l-hopital/",
       "kind": "questions",
@@ -9254,42 +7445,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quel-est-le-diagnostic-de-david-lisnard-sur-l-hopital:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-diagnostic-de-david-lisnard-sur-l-hopital/",
-      "kind": "questions",
-      "page_title": "Quel est le diagnostic de David Lisnard sur l’hôpital ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Comment David Lisnard compte-t-il lutter contre les déserts médicaux ?"
-    },
-    {
-      "id": "questions:questions-quel-est-le-diagnostic-de-david-lisnard-sur-l-hopital:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-diagnostic-de-david-lisnard-sur-l-hopital/",
-      "kind": "questions",
-      "page_title": "Quel est le diagnostic de David Lisnard sur l’hôpital ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Pourquoi la France dépense-t-elle plus que ses voisins pour une santé moins accessible ?"
-    },
-    {
-      "id": "questions:questions-quel-est-le-diagnostic-de-david-lisnard-sur-l-hopital:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-diagnostic-de-david-lisnard-sur-l-hopital/",
-      "kind": "questions",
-      "page_title": "Quel est le diagnostic de David Lisnard sur l’hôpital ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Où passe l’argent public selon David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-quel-est-le-diagnostic-de-david-lisnard-sur-l-hopital:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-diagnostic-de-david-lisnard-sur-l-hopital/",
-      "kind": "questions",
-      "page_title": "Quel est le diagnostic de David Lisnard sur l’hôpital ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Quel candidat propose une réforme de l’hôpital public ?"
-    },
-    {
       "id": "questions:questions-david-lisnard-veut-il-baisser-les-impots:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-veut-il-baisser-les-impots/",
       "kind": "questions",
@@ -9396,42 +7551,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 12,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-david-lisnard-veut-il-baisser-les-impots:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-veut-il-baisser-les-impots/",
-      "kind": "questions",
-      "page_title": "David Lisnard veut-il baisser les impôts ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "Que ferait David Lisnard des 200 milliards d’économies annoncés ?"
-    },
-    {
-      "id": "questions:questions-david-lisnard-veut-il-baisser-les-impots:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-veut-il-baisser-les-impots/",
-      "kind": "questions",
-      "page_title": "David Lisnard veut-il baisser les impôts ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Que propose David Lisnard pour le pouvoir d’achat ?"
-    },
-    {
-      "id": "questions:questions-david-lisnard-veut-il-baisser-les-impots:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-veut-il-baisser-les-impots/",
-      "kind": "questions",
-      "page_title": "David Lisnard veut-il baisser les impôts ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Quelles économies propose David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-david-lisnard-veut-il-baisser-les-impots:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-veut-il-baisser-les-impots/",
-      "kind": "questions",
-      "page_title": "David Lisnard veut-il baisser les impôts ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Quel est le bilan de David Lisnard comme maire de Cannes ?"
     },
     {
       "id": "questions:questions-que-ferait-david-lisnard-des-200-milliards-d-economies:p1",
@@ -9560,42 +7679,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-que-ferait-david-lisnard-des-200-milliards-d-economies:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-ferait-david-lisnard-des-200-milliards-d-economies/",
-      "kind": "questions",
-      "page_title": "Que ferait David Lisnard des 200 milliards d’économies annoncés ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Quelles économies propose David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-que-ferait-david-lisnard-des-200-milliards-d-economies:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-ferait-david-lisnard-des-200-milliards-d-economies/",
-      "kind": "questions",
-      "page_title": "Que ferait David Lisnard des 200 milliards d’économies annoncés ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Que propose David Lisnard pour le pouvoir d’achat ?"
-    },
-    {
-      "id": "questions:questions-que-ferait-david-lisnard-des-200-milliards-d-economies:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-ferait-david-lisnard-des-200-milliards-d-economies/",
-      "kind": "questions",
-      "page_title": "Que ferait David Lisnard des 200 milliards d’économies annoncés ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Que propose David Lisnard face à la dette publique ?"
-    },
-    {
-      "id": "questions:questions-que-ferait-david-lisnard-des-200-milliards-d-economies:p18",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-ferait-david-lisnard-des-200-milliards-d-economies/",
-      "kind": "questions",
-      "page_title": "Que ferait David Lisnard des 200 milliards d’économies annoncés ?",
-      "section": "Questions voisines",
-      "paragraph": 18,
-      "text": "David Lisnard veut-il baisser les impôts ?"
-    },
-    {
       "id": "questions:questions-quelles-economies-david-lisnard-propose-t-il-et-ou-exactement:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/quelles-economies-david-lisnard-propose-t-il-et-ou-exactement/",
       "kind": "questions",
@@ -9713,42 +7796,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-quelles-economies-david-lisnard-propose-t-il-et-ou-exactement:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/quelles-economies-david-lisnard-propose-t-il-et-ou-exactement/",
-      "kind": "questions",
-      "page_title": "Quelles économies propose David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Que ferait David Lisnard des 200 milliards d’économies annoncés ?"
-    },
-    {
-      "id": "questions:questions-quelles-economies-david-lisnard-propose-t-il-et-ou-exactement:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/quelles-economies-david-lisnard-propose-t-il-et-ou-exactement/",
-      "kind": "questions",
-      "page_title": "Quelles économies propose David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "Que propose David Lisnard face à la dette publique ?"
-    },
-    {
-      "id": "questions:questions-quelles-economies-david-lisnard-propose-t-il-et-ou-exactement:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/quelles-economies-david-lisnard-propose-t-il-et-ou-exactement/",
-      "kind": "questions",
-      "page_title": "Quelles économies propose David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Où passe l’argent public selon David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-quelles-economies-david-lisnard-propose-t-il-et-ou-exactement:p17",
-      "url": "https://www.unenouvelleenergie.fr/questions/quelles-economies-david-lisnard-propose-t-il-et-ou-exactement/",
-      "kind": "questions",
-      "page_title": "Quelles économies propose David Lisnard ?",
-      "section": "Questions voisines",
-      "paragraph": 17,
-      "text": "Que veut faire David Lisnard contre l’excès de normes ?"
-    },
-    {
       "id": "questions:questions-comment-david-lisnard-veut-il-augmenter-les-salaires-sans-augmenter-le-cout-du-travail:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/comment-david-lisnard-veut-il-augmenter-les-salaires-sans-augmenter-le-cout-du-travail/",
       "kind": "questions",
@@ -9857,33 +7904,6 @@
       "text": "Le sujet en entier : la page de programme ."
     },
     {
-      "id": "questions:questions-comment-david-lisnard-veut-il-augmenter-les-salaires-sans-augmenter-le-cout-du-travail:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/comment-david-lisnard-veut-il-augmenter-les-salaires-sans-augmenter-le-cout-du-travail/",
-      "kind": "questions",
-      "page_title": "Comment David Lisnard veut-il augmenter les salaires sans augmenter le coût du travail ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "Que propose David Lisnard pour le pouvoir d’achat ?"
-    },
-    {
-      "id": "questions:questions-comment-david-lisnard-veut-il-augmenter-les-salaires-sans-augmenter-le-cout-du-travail:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/comment-david-lisnard-veut-il-augmenter-les-salaires-sans-augmenter-le-cout-du-travail/",
-      "kind": "questions",
-      "page_title": "Comment David Lisnard veut-il augmenter les salaires sans augmenter le coût du travail ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Quelles économies propose David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-comment-david-lisnard-veut-il-augmenter-les-salaires-sans-augmenter-le-cout-du-travail:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/comment-david-lisnard-veut-il-augmenter-les-salaires-sans-augmenter-le-cout-du-travail/",
-      "kind": "questions",
-      "page_title": "Comment David Lisnard veut-il augmenter les salaires sans augmenter le coût du travail ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "David Lisnard veut-il baisser les impôts ?"
-    },
-    {
       "id": "questions:questions-que-propose-david-lisnard-pour-le-pouvoir-d-achat:p1",
       "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-pour-le-pouvoir-d-achat/",
       "kind": "questions",
@@ -9981,51 +8001,6 @@
       "section": "Ce que David Lisnard a dit",
       "paragraph": 11,
       "text": "Le sujet en entier : la page de programme ."
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-pour-le-pouvoir-d-achat:p12",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-pour-le-pouvoir-d-achat/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard pour le pouvoir d’achat ?",
-      "section": "Questions voisines",
-      "paragraph": 12,
-      "text": "Comment David Lisnard veut-il augmenter les salaires sans augmenter le coût du travail ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-pour-le-pouvoir-d-achat:p13",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-pour-le-pouvoir-d-achat/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard pour le pouvoir d’achat ?",
-      "section": "Questions voisines",
-      "paragraph": 13,
-      "text": "Quelles économies propose David Lisnard ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-pour-le-pouvoir-d-achat:p14",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-pour-le-pouvoir-d-achat/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard pour le pouvoir d’achat ?",
-      "section": "Questions voisines",
-      "paragraph": 14,
-      "text": "Que ferait David Lisnard des 200 milliards d’économies annoncés ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-pour-le-pouvoir-d-achat:p15",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-pour-le-pouvoir-d-achat/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard pour le pouvoir d’achat ?",
-      "section": "Questions voisines",
-      "paragraph": 15,
-      "text": "David Lisnard veut-il baisser les impôts ?"
-    },
-    {
-      "id": "questions:questions-que-propose-david-lisnard-pour-le-pouvoir-d-achat:p16",
-      "url": "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-pour-le-pouvoir-d-achat/",
-      "kind": "questions",
-      "page_title": "Que propose David Lisnard pour le pouvoir d’achat ?",
-      "section": "Questions voisines",
-      "paragraph": 16,
-      "text": "Quel candidat veut améliorer le pouvoir d’achat ?"
     }
   ]
 }

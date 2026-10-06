@@ -1,5 +1,6 @@
 # Image unique : front Vue compilé + API FastAPI.
-# Le build re-scrape le site officiel et recalcule les embeddings Mistral.
+# Le build re-scrape le site officiel et met à jour les embeddings Mistral
+# (seuls les passages nouveaux ou modifiés sont recalculés).
 
 # --- 1. Front (Vue) -----------------------------------------------------------
 FROM node:22-alpine AS front
@@ -15,16 +16,17 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY scripts/ scripts/
-# Corpus versionné : repli si le scrape échoue
-COPY data/programme.json data/
+# Corpus + embeddings versionnés : repli si le scrape échoue,
+# et cache des vecteurs déjà calculés
+COPY data/ data/
 # Les sitemaps invalident le cache Docker dès que le site change :
 # le scrape (et donc l'embedding) n'est rejoué que si le contenu a bougé.
 ADD https://www.unenouvelleenergie.fr/pages-sitemap.xml /tmp/sitemaps/pages.xml
 ADD https://www.unenouvelleenergie.fr/questions-sitemap.xml /tmp/sitemaps/questions.xml
 RUN python scripts/scrape_programme.py \
     || echo "AVERTISSEMENT : scrape échoué, corpus versionné conservé"
-# Variables Railway passées au build. Sans clé, le build échoue
-# (plutôt que de déployer une app sans recherche sémantique).
+# Variables Railway passées au build. La clé n'est utilisée que si des
+# passages ont changé ; sans clé dans ce cas, le build échoue.
 ARG MISTRAL_API_KEY
 ARG MISTRAL_EMBED_MODEL=mistral-embed
 RUN python scripts/embed_programme.py

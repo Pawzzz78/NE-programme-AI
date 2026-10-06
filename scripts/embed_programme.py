@@ -1,5 +1,9 @@
 """Calcule les embeddings Mistral pour chaque passage du programme.
 
+Incrémental : les vecteurs déjà présents dans data/embeddings.npz sont réutilisés
+pour les passages dont le texte n'a pas changé. Seuls les passages nouveaux ou
+modifiés sont envoyés à Mistral (aucun appel si le corpus est inchangé).
+
 Prérequis : data/programme.json (scrape) + MISTRAL_API_KEY dans .env
 
 Usage :
@@ -8,6 +12,7 @@ Usage :
 
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import time
@@ -36,12 +41,6 @@ def chunk_text(chunk: dict) -> str:
     )
 
 
-def l2_normalize(matrix: np.ndarray) -> np.ndarray:
-    norms = np.linalg.norm(matrix, axis=1, keepdims=True)
-    norms = np.maximum(norms, 1e-12)
-    return matrix / norms
-
-
 def embed_batch(client: Mistral, model: str, batch: list[str]):
     """Appel embeddings avec nouvelles tentatives sur erreurs passagères (429, 5xx, réseau)."""
     for attempt in range(1, MAX_ATTEMPTS + 1):
@@ -58,11 +57,24 @@ def embed_batch(client: Mistral, model: str, batch: list[str]):
             time.sleep(delay)
 
 
-def main() -> None:
-    api_key = os.getenv("MISTRAL_API_KEY", "").strip()
-    if not api_key or api_key.startswith("your_"):
-        raise SystemExit("MISTRAL_API_KEY manquante dans .env")
+def text_hash(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
+
+def load_cache(model: str) -> tuple[dict[str, np.ndarray], list[str], list[str]]:
+    """Vecteurs existants indexés par hash de texte (vide si autre modèle ou ancien format)."""
+    if not OUT_NPZ.exists() or not OUT_META.exists():
+        return {}, [], []
+    meta = json.loads(OUT_META.read_text(encoding="utf-8"))
+    data = np.load(OUT_NPZ, allow_pickle=False)
+    if meta.get("model") != model or "hashes" not in data:
+        return {}, [], []
+    hashes = [str(h) for h in data["hashes"]]
+    ids = [str(i) for i in data["ids"]]
+    return dict(zip(hashes, data["vectors"])), ids, hashes
+
+
+def main() -> None:
     model = os.getenv("MISTRAL_EMBED_MODEL", "mistral-embed")
     if not CORPUS_PATH.exists():
         raise SystemExit(
@@ -74,23 +86,39 @@ def main() -> None:
     chunks = corpus["chunks"]
     texts = [chunk_text(c) for c in chunks]
     ids = [c["id"] for c in chunks]
-    print(f"{len(texts)} passages -> embeddings ({model}), lots de {BATCH_SIZE}...")
+    hashes = [text_hash(t) for t in texts]
 
-    client = Mistral(api_key=api_key)
-    vectors: list[list[float]] = []
+    cache, cached_ids, cached_hashes = load_cache(model)
+    if cached_ids == ids and cached_hashes == hashes:
+        print(f"Embeddings à jour ({len(ids)} passages) : aucun appel à Mistral.")
+        return
 
-    for i in range(0, len(texts), BATCH_SIZE):
-        batch = texts[i : i + BATCH_SIZE]
-        resp = embed_batch(client, model, batch)
-        # SDK may return data sorted by index
-        ordered = sorted(resp.data, key=lambda d: d.index)
-        vectors.extend([d.embedding for d in ordered])
-        done = min(i + BATCH_SIZE, len(texts))
-        print(f"  [{done}/{len(texts)}]")
-        time.sleep(0.15)
+    todo = [i for i, h in enumerate(hashes) if h not in cache]
+    print(
+        f"{len(texts)} passages : {len(texts) - len(todo)} réutilisés, "
+        f"{len(todo)} à calculer ({model}), lots de {BATCH_SIZE}..."
+    )
 
-    matrix = l2_normalize(np.asarray(vectors, dtype=np.float32))
-    np.savez_compressed(OUT_NPZ, ids=np.asarray(ids), vectors=matrix)
+    if todo:
+        api_key = os.getenv("MISTRAL_API_KEY", "").strip()
+        if not api_key or api_key.startswith("your_"):
+            raise SystemExit("MISTRAL_API_KEY manquante dans .env")
+        client = Mistral(api_key=api_key)
+        for start in range(0, len(todo), BATCH_SIZE):
+            batch_idx = todo[start : start + BATCH_SIZE]
+            resp = embed_batch(client, model, [texts[i] for i in batch_idx])
+            # SDK may return data sorted by index
+            ordered = sorted(resp.data, key=lambda d: d.index)
+            for i, d in zip(batch_idx, ordered):
+                vec = np.asarray(d.embedding, dtype=np.float32)
+                cache[hashes[i]] = vec / max(float(np.linalg.norm(vec)), 1e-12)
+            print(f"  [{min(start + BATCH_SIZE, len(todo))}/{len(todo)}]")
+            time.sleep(0.15)
+
+    matrix = np.stack([cache[h] for h in hashes]).astype(np.float32)
+    np.savez_compressed(
+        OUT_NPZ, ids=np.asarray(ids), hashes=np.asarray(hashes), vectors=matrix
+    )
 
     meta = {
         "model": model,
