@@ -1,0 +1,47 @@
+# Front Vue 3 — Programme Lisnard
+
+UI en **clean architecture** (domain → application → infrastructure → ui).
+
+## Lancer en dev
+
+Prérequis : API FastAPI sur le port 8000.
+
+```bash
+# terminal 1 — racine du repo
+.venv\Scripts\activate
+uvicorn app.main:app --reload --port 8000
+
+# terminal 2 — frontend
+cd frontend
+npm install
+npm run dev
+```
+
+Ouvrir [http://127.0.0.1:5173](http://127.0.0.1:5173)  
+Vite proxye `/api` → `http://127.0.0.1:8000`.
+
+## Build production
+
+```bash
+cd frontend
+npm run build
+```
+
+Génère `frontend/dist/`. FastAPI sert alors cette UI sur [http://127.0.0.1:8000](http://127.0.0.1:8000).
+
+## Architecture
+
+```
+src/
+├── domain/            # modèles + ports (pas de Vue, pas de fetch)
+├── application/       # use-cases (composables)
+├── infrastructure/    # HTTP Mistral/API, composition root
+└── ui/                # composants Vue + styles
+```
+
+| Couche | Rôle |
+|--------|------|
+| `domain/` | `ProgrammeSource`, `CorpusHealth`, port `ProgrammeRepository` |
+| `application/` | `useHealth`, `useProgrammeQuery` |
+| `infrastructure/` | `HttpProgrammeRepository`, `apiClient` |
+| `ui/` | pages et composants purement présentationnels |

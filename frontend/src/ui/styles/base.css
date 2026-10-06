@@ -1,0 +1,74 @@
+:root {
+  --navy: #1a2668;
+  --navy-deep: #141c4f;
+  --navy-soft: #24307a;
+  --gold: #b5a981;
+  --gold-hover: #c4ba95;
+  --gold-ink: #1a2668;
+  --white: #ffffff;
+  --ink: #1a2668;
+  --muted: #5c648a;
+  --line: #d8dce8;
+  --bg: #f4f5f9;
+  --card: #ffffff;
+  --warn: #b42318;
+  --ok: #b5a981;
+
+  --font: "Montserrat", system-ui, sans-serif;
+  --radius-pill: 999px;
+  --radius: 10px;
+  --max: 46rem;
+  --shadow: 0 10px 30px rgba(26, 38, 104, 0.12);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+textarea,
+input {
+  font: inherit;
+}
+
+button:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

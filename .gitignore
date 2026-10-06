@@ -1,0 +1,16 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.Python
+.DS_Store
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+scripts/_probe_*.py
+data/embeddings.npz
+data/embeddings_meta.json
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo

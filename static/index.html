@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Programme Lisnard — questions sourcées</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <p class="kicker">Outil citoyen open-source</p>
+      <h1>Interroger le programme de David Lisnard</h1>
+      <p class="lede">
+        Les réponses s’appuient uniquement sur
+        <a href="https://www.unenouvelleenergie.fr/notre-programme/" target="_blank" rel="noopener">unenouvelleenergie.fr</a>,
+        avec citation de la page et du paragraphe. Si rien n’est trouvé dans le programme, l’outil le dit.
+      </p>
+      <p id="status" class="status" aria-live="polite">Chargement du corpus…</p>
+    </header>
+
+    <div class="tabs" role="tablist">
+      <button type="button" class="tab active" data-mode="ask" role="tab" aria-selected="true">Demander</button>
+      <button type="button" class="tab" data-mode="search" role="tab" aria-selected="false">Chercher</button>
+    </div>
+
+    <form id="form" class="form">
+      <label for="q" id="q-label">Votre question</label>
+      <textarea id="q" name="q" rows="3" maxlength="1000" required
+        placeholder="Ex. Que propose-t-il sur la sécurité ? Sur l’immigration ? Sur l’école ?"></textarea>
+      <button type="submit" id="send">Demander</button>
+    </form>
+
+    <section id="result" class="result" hidden>
+      <h2 id="result-title">Réponse</h2>
+      <div id="answer" class="answer"></div>
+      <p id="retrieval-meta" class="meta" hidden></p>
+      <h3 id="sources-title">Passages utilisés</h3>
+      <ul id="sources" class="sources"></ul>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

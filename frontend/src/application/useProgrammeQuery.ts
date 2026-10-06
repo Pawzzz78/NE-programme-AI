@@ -1,0 +1,76 @@
+import { ref } from "vue";
+import type { ChatResult, ProgrammeSource, QueryMode, RetrievalMode } from "@domain/models";
+import { programmeRepository } from "@infra/container";
+import { ApiError } from "@infra/http/apiClient";
+
+export function useProgrammeQuery() {
+  const mode = ref<QueryMode>("ask");
+  const query = ref("");
+  const loading = ref(false);
+  const error = ref<string | null>(null);
+  const answer = ref<string | null>(null);
+  const sources = ref<ProgrammeSource[]>([]);
+  const retrieval = ref<RetrievalMode | null>(null);
+  const hasResult = ref(false);
+
+  function setMode(next: QueryMode) {
+    mode.value = next;
+    error.value = null;
+    answer.value = null;
+    sources.value = [];
+    retrieval.value = null;
+    hasResult.value = false;
+  }
+
+  async function submit() {
+    const q = query.value.trim();
+    if (q.length < 3 || loading.value) return;
+
+    loading.value = true;
+    error.value = null;
+    hasResult.value = false;
+    answer.value = null;
+    sources.value = [];
+    retrieval.value = null;
+
+    try {
+      if (mode.value === "ask") {
+        const result: ChatResult = await programmeRepository.ask(q);
+        answer.value = result.answer;
+        sources.value = result.sources;
+        retrieval.value = result.retrieval;
+      } else {
+        const result = await programmeRepository.search(q);
+        sources.value = result.results;
+        retrieval.value = result.retrieval;
+        if (!result.results.length) {
+          answer.value = "Aucun passage trouvé dans le programme officiel.";
+        }
+      }
+      hasResult.value = true;
+    } catch (e) {
+      error.value =
+        e instanceof ApiError
+          ? e.message
+          : e instanceof Error
+            ? e.message
+            : "Impossible de joindre l’API.";
+      hasResult.value = true;
+    } finally {
+      loading.value = false;
+    }
+  }
+
+  return {
+    mode,
+    query,
+    loading,
+    error,
+    answer,
+    sources,
+    retrieval,
+    hasResult,
+    setMode,
+    submit,
+  };
+}
