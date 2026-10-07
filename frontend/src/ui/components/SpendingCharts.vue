@@ -23,9 +23,14 @@ import {
 } from "../charts/theme";
 import type { Point } from "../charts/theme";
 import ChartCard from "./ChartCard.vue";
+import EuRankingChart from "./EuRankingChart.vue";
 import SegToggle from "./SegToggle.vue";
 
-const props = defineProps<{ data: SpendingData }>();
+const props = defineProps<{
+  data: SpendingData;
+  /** « spending » : dépenses publiques ; « social » : prestations sociales et retraites. */
+  part: "spending" | "social";
+}>();
 
 const mainSource = computed(() => ({
   source: `${props.data.source} (gov_10a_main)`,
@@ -283,83 +288,7 @@ const oldAgeOption = computed<EChartsOption>(() => {
   };
 });
 
-// --- 5a. Classement des pays de l'UE27 ------------------------------------------
-const euYears = computed(() => props.data.euCompare.years);
-const euIdx = ref(props.data.euCompare.years.length - 1);
-const euYear = computed(() => euYears.value[euIdx.value]);
-
-const euRows = computed(() => {
-  const i = euIdx.value;
-  const c = props.data.euCompare;
-  const rows = c.countries
-    .map((x) => ({ code: x.code, label: x.label, value: x.pctGdp[i] }))
-    .filter((r): r is { code: string; label: string; value: number } => r.value !== null);
-  const avg = c.eu27[i];
-  const all = avg === null ? rows : [...rows, { code: "EU27", label: "Moyenne UE27", value: avg }];
-  return all.sort((a, b) => b.value - a.value);
-});
-
-const franceRank = computed(() => {
-  const countries = euRows.value.filter((r) => r.code !== "EU27");
-  const rank = countries.findIndex((r) => r.code === "FR") + 1;
-  return rank > 0 ? { rank, of: countries.length } : null;
-});
-
-const euLeader = computed(() => euRows.value.find((r) => r.code !== "EU27") ?? null);
-
-const euOption = computed<EChartsOption>(() => ({
-  textStyle: { fontFamily: FONT },
-  grid: { left: narrow.value ? 4 : 12, right: narrow.value ? 48 : 56, top: 4, bottom: 4, containLabel: true },
-  animationDuration: 500,
-  tooltip: {
-    trigger: "item",
-    backgroundColor: "rgba(20,28,79,0.96)",
-    borderWidth: 0,
-    padding: [10, 14],
-    textStyle: { color: "#fff", fontFamily: FONT, fontSize: 12 },
-    formatter: (p: unknown) => {
-      const r = euRows.value[(p as { dataIndex: number }).dataIndex];
-      return `${tooltipTitle(`${r.label} · ${euYear.value}`)}<strong style="font-size:15px">${nf1.format(r.value)} % du PIB</strong>`;
-    },
-  },
-  xAxis: { type: "value", show: false, min: 0 },
-  yAxis: {
-    type: "category",
-    inverse: true,
-    data: euRows.value.map((r) => r.label),
-    axisLine: { show: false },
-    axisTick: { show: false },
-    axisLabel: {
-      color: NAVY,
-      fontSize: narrow.value ? 10 : 11,
-      fontWeight: 600,
-      interval: 0,
-    },
-  },
-  series: [
-    {
-      type: "bar",
-      barWidth: "62%",
-      data: euRows.value.map((r) => ({
-        value: r.value,
-        itemStyle: {
-          color: r.code === "FR" ? NAVY : r.code === "EU27" ? GOLD : "#b8bfd6",
-          borderRadius: [0, 5, 5, 0],
-        },
-      })),
-      label: {
-        show: true,
-        position: "right",
-        color: NAVY,
-        fontSize: 11,
-        fontWeight: 700,
-        formatter: (p: unknown) => `${nf1.format((p as { value: number }).value)} %`,
-      },
-    },
-  ],
-}));
-
-// --- 5b. Comparaison européenne dans le temps -----------------------------------
+// --- 5. Comparaison européenne dans le temps -----------------------------------
 const compareOption = computed<EChartsOption>(() => ({
   textStyle: { fontFamily: FONT },
   xAxis: timeAxis,
@@ -394,109 +323,99 @@ const compareOption = computed<EChartsOption>(() => ({
 </script>
 
 <template>
-  <ChartCard
-    title="Évolution des dépenses publiques"
-    subtitle="Total des dépenses des administrations publiques, par année"
-    question="Que propose le programme pour réduire les dépenses publiques ?"
-    :source="mainSource.source"
-    :source-url="mainSource.url"
-  >
-    <template #actions>
-      <SegToggle v-model="totalUnit" :options="totalOptions" label="Unité" />
-    </template>
-    <VChart class="chart" :option="totalOption" autoresize />
-  </ChartCard>
+  <template v-if="part === 'spending'">
+    <ChartCard
+      topic="depenses"
+      title="Évolution des dépenses publiques"
+      :subtitle="`Total des dépenses des administrations publiques, par année · ${totalUnit === 'eur' ? 'en milliards d’euros' : 'en % du PIB'}`"
+      question="Que propose le programme pour réduire les dépenses publiques ?"
+      :source="mainSource.source"
+      :source-url="mainSource.url"
+    >
+      <template #actions>
+        <SegToggle v-model="totalUnit" :options="totalOptions" label="Unité" />
+      </template>
+      <VChart class="chart" :option="totalOption" autoresize />
+    </ChartCard>
 
-  <ChartCard
-    title="À quoi sert l’argent public ?"
-    :subtitle="`Dépenses par fonction en ${selectedYear}`"
-    question="Quelles économies et quelles réformes de l’État le programme propose-t-il ?"
-    :source="cofogSource.source"
-    :source-url="cofogSource.url"
-  >
-    <template #actions>
-      <label class="year">
-        <span>{{ selectedYear }}</span>
-        <input
-          v-model.number="yearIdx"
-          type="range"
-          :min="0"
-          :max="cofogYears.length - 1"
-          step="1"
-          aria-label="Année"
-        />
-      </label>
-    </template>
-    <VChart class="chart bars" :option="cofogOption" autoresize />
-    <p v-if="oldAge" class="aside">
-      Dont retraites (fonction « vieillesse » de la protection sociale) :
-      <strong>{{ nf.format(oldAge.value) }} Md€</strong>, soit
-      {{ nf1.format(oldAge.share) }} % des dépenses publiques.
-    </p>
-  </ChartCard>
+    <ChartCard
+      topic="depenses"
+      title="À quoi sert l’argent public ?"
+      :subtitle="`Dépenses par fonction en ${selectedYear}`"
+      question="Quelles économies et quelles réformes de l’État le programme propose-t-il ?"
+      :source="cofogSource.source"
+      :source-url="cofogSource.url"
+    >
+      <template #actions>
+        <label class="year">
+          <span>{{ selectedYear }}</span>
+          <input
+            v-model.number="yearIdx"
+            type="range"
+            :min="0"
+            :max="cofogYears.length - 1"
+            step="1"
+            aria-label="Année"
+          />
+        </label>
+      </template>
+      <VChart class="chart bars" :option="cofogOption" autoresize />
+      <p v-if="oldAge" class="aside">
+        Dont retraites (fonction « vieillesse » de la protection sociale) :
+        <strong>{{ nf.format(oldAge.value) }} Md€</strong>, soit
+        {{ nf1.format(oldAge.share) }} % des dépenses publiques.
+      </p>
+    </ChartCard>
 
-  <ChartCard
-    title="Prestations sociales"
-    subtitle="Prestations en espèces et prestations en nature achetées au secteur marchand"
-    question="Que propose le programme sur les prestations sociales et les aides sociales ?"
-    :source="mainSource.source"
-    :source-url="mainSource.url"
-  >
-    <VChart class="chart" :option="socialOption" autoresize />
-  </ChartCard>
+    <EuRankingChart
+      :ranking="data.euCompare"
+      topic="depenses"
+      title="Dépenses publiques en % du PIB : les pays de l’UE"
+      subtitle="Total des dépenses des administrations publiques"
+      aside-phrase="pour le poids des dépenses publiques"
+      question="Que propose le programme pour réduire le poids de la dépense publique dans le PIB ?"
+      :source="mainSource.source"
+      :source-url="mainSource.url"
+    />
 
-  <ChartCard
-    title="Retraites"
-    subtitle="Dépenses de la fonction « vieillesse » (pensions et services aux retraités)"
-    question="Que propose le programme sur les retraites ?"
-    :source="cofogSource.source"
-    :source-url="cofogSource.url"
-  >
-    <template #actions>
-      <SegToggle v-model="oldAgeUnit" :options="oldAgeOptions" label="Unité" />
-    </template>
-    <VChart class="chart" :option="oldAgeOption" autoresize />
-  </ChartCard>
+    <ChartCard
+      topic="depenses"
+      title="Dépenses publiques : la France face à ses voisins"
+      subtitle="Total des dépenses en % du PIB"
+      question="Que propose le programme pour réduire le poids de la dépense publique dans le PIB ?"
+      :source="mainSource.source"
+      :source-url="mainSource.url"
+    >
+      <VChart class="chart" :option="compareOption" autoresize />
+    </ChartCard>
+  </template>
 
-  <ChartCard
-    title="Dépenses publiques en % du PIB : les pays de l’UE"
-    :subtitle="`Total des dépenses des administrations publiques, ${euYear}`"
-    question="Que propose le programme pour réduire le poids de la dépense publique dans le PIB ?"
-    :source="mainSource.source"
-    :source-url="mainSource.url"
-  >
-    <template #actions>
-      <label class="year">
-        <span>{{ euYear }}</span>
-        <input
-          v-model.number="euIdx"
-          type="range"
-          :min="0"
-          :max="euYears.length - 1"
-          step="1"
-          aria-label="Année"
-        />
-      </label>
-    </template>
-    <VChart class="chart eu" :option="euOption" autoresize />
-    <p v-if="franceRank" class="aside">
-      En {{ euYear }}, la France est au <strong>{{ franceRank.rank }}<sup>e</sup> rang</strong> sur
-      {{ franceRank.of }} pays de l’UE pour le poids des dépenses publiques<template
-        v-if="franceRank.rank > 1 && euLeader"
-        >, derrière {{ euLeader.label }} ({{ nf1.format(euLeader.value) }} %)</template
-      >.
-    </p>
-  </ChartCard>
+  <template v-else>
+    <ChartCard
+      topic="social"
+      title="Prestations sociales"
+      subtitle="Prestations en espèces et en nature achetées au secteur marchand · en milliards d’euros"
+      question="Que propose le programme sur les prestations sociales et les aides sociales ?"
+      :source="mainSource.source"
+      :source-url="mainSource.url"
+    >
+      <VChart class="chart" :option="socialOption" autoresize />
+    </ChartCard>
 
-  <ChartCard
-    title="Dépenses publiques : la France face à ses voisins"
-    subtitle="Total des dépenses en % du PIB"
-    question="Que propose le programme pour réduire le poids de la dépense publique dans le PIB ?"
-    :source="mainSource.source"
-    :source-url="mainSource.url"
-  >
-    <VChart class="chart" :option="compareOption" autoresize />
-  </ChartCard>
+    <ChartCard
+      topic="retraites"
+      title="Retraites"
+      :subtitle="`Dépenses de la fonction « vieillesse » (pensions et services aux retraités) · ${oldAgeUnit === 'eur' ? 'en milliards d’euros' : 'en % des dépenses publiques'}`"
+      question="Que propose le programme sur les retraites ?"
+      :source="cofogSource.source"
+      :source-url="cofogSource.url"
+    >
+      <template #actions>
+        <SegToggle v-model="oldAgeUnit" :options="oldAgeOptions" label="Unité" />
+      </template>
+      <VChart class="chart" :option="oldAgeOption" autoresize />
+    </ChartCard>
+  </template>
 </template>
 
 <style scoped>
@@ -507,10 +426,6 @@ const compareOption = computed<EChartsOption>(() => ({
 
 .chart.bars {
   height: 25rem;
-}
-
-.chart.eu {
-  height: 38rem;
 }
 
 .year {
@@ -544,10 +459,6 @@ const compareOption = computed<EChartsOption>(() => ({
 
   .chart.bars {
     height: 27rem;
-  }
-
-  .chart.eu {
-    height: 40rem;
   }
 }
 </style>

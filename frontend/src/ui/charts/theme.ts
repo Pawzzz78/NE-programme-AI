@@ -5,9 +5,11 @@ import {
   DataZoomComponent,
   GridComponent,
   LegendComponent,
+  MarkLineComponent,
   TooltipComponent,
 } from "echarts/components";
 import { CanvasRenderer } from "echarts/renderers";
+import { monthStart } from "@domain/economy";
 
 use([
   LineChart,
@@ -16,6 +18,7 @@ use([
   TooltipComponent,
   LegendComponent,
   DataZoomComponent,
+  MarkLineComponent,
   CanvasRenderer,
 ]);
 
@@ -40,6 +43,22 @@ export function yearPoints(years: string[], values: (number | null)[], scale = 1
   const out: Point[] = [];
   values.forEach((v, i) => {
     if (v !== null) out.push([Date.UTC(Number(years[i]), 0, 1), v * scale]);
+  });
+  return out;
+}
+
+const monthFormat = new Intl.DateTimeFormat("fr-FR", { month: "long", year: "numeric", timeZone: "UTC" });
+
+/** Libellé « août 2026 » d'un point placé au 1er du mois. */
+export function monthOf(ts: number): string {
+  return monthFormat.format(new Date(ts));
+}
+
+/** Points (date, valeur) d'une série mensuelle « 2026-08 », en ignorant les valeurs manquantes. */
+export function monthPoints(months: string[], values: (number | null)[]): Point[] {
+  const out: Point[] = [];
+  values.forEach((v, i) => {
+    if (v !== null) out.push([monthStart(months[i]), v]);
   });
   return out;
 }

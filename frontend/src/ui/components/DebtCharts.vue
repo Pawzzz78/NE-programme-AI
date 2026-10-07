@@ -25,11 +25,17 @@ import SegToggle from "./SegToggle.vue";
 
 const props = defineProps<{ data: DebtData }>();
 
-const unit = ref<"eur" | "pct">("eur");
+const unit = ref<"eur" | "pct" | "pop">("eur");
 const unitOptions = [
   { value: "eur" as const, label: "Milliards €" },
   { value: "pct" as const, label: "% du PIB" },
+  { value: "pop" as const, label: "€ par habitant" },
 ];
+const UNIT_LABEL = {
+  eur: "en milliards d’euros",
+  pct: "en % du PIB",
+  pop: "en euros par habitant",
+};
 
 function toPoints(values: (number | null)[], scale = 1): Point[] {
   const out: Point[] = [];
@@ -45,12 +51,35 @@ function quarterOf(ts: number): string {
   return formatQuarter(`${d.getUTCFullYear()}-Q${Math.floor(d.getUTCMonth() / 3) + 1}`);
 }
 
+/** Dette en euros par habitant : population au 1er janvier de l'année (la dernière connue au-delà). */
+function perCapita(): Point[] {
+  const { years, values } = props.data.population;
+  const byYear = new Map(years.map((y, i) => [Number(y), values[i]]));
+  const lastYear = Math.max(...byYear.keys());
+  const out: Point[] = [];
+  props.data.france.eurMillions.forEach((v, i) => {
+    const ts = quarterEnd(props.data.quarters[i]);
+    const pop = byYear.get(Math.min(new Date(ts - 1).getUTCFullYear(), lastYear));
+    if (v !== null && pop) out.push([ts, (v * 1e6) / pop]);
+  });
+  return out;
+}
+
 const debtOption = computed<EChartsOption>(() => {
-  const isEur = unit.value === "eur";
-  const points = isEur
-    ? toPoints(props.data.france.eurMillions, 1 / 1000)
-    : toPoints(props.data.france.pctGdp);
-  const fmt = (v: number) => (isEur ? `${nf.format(v)} Md€` : `${nf1.format(v)} % du PIB`);
+  const isPct = unit.value === "pct";
+  const zeroBased = unit.value !== "pct";
+  const points =
+    unit.value === "eur"
+      ? toPoints(props.data.france.eurMillions, 1 / 1000)
+      : isPct
+        ? toPoints(props.data.france.pctGdp)
+        : perCapita();
+  const fmt = (v: number) =>
+    unit.value === "eur"
+      ? `${nf.format(v)} Md€`
+      : isPct
+        ? `${nf1.format(v)} % du PIB`
+        : `${nf.format(v)} € par habitant`;
   return {
     textStyle: { fontFamily: FONT },
     xAxis: timeAxis,
@@ -66,12 +95,12 @@ const debtOption = computed<EChartsOption>(() => {
     },
     yAxis: {
       type: "value",
-      scale: !isEur,
+      scale: !zeroBased,
       splitLine: { lineStyle: { color: GRID } },
       axisLabel: {
         color: MUTED,
         fontSize: 11,
-        formatter: (v: number) => (isEur ? `${nf.format(v)}` : `${v} %`),
+        formatter: (v: number) => (isPct ? `${v} %` : nf.format(v)),
       },
     },
     series: [
@@ -134,8 +163,9 @@ const compareOption = computed<EChartsOption>(() => ({
 
 <template>
   <ChartCard
+    topic="dette"
     title="Évolution de la dette publique"
-    subtitle="Dette brute des administrations publiques, fin de trimestre"
+    :subtitle="`Dette brute des administrations publiques, fin de trimestre · ${UNIT_LABEL[unit]}`"
     question="Que propose le programme pour réduire la dette publique ?"
     :source="`${data.source} (${data.dataset})`"
     :source-url="data.sourceUrl"
@@ -147,6 +177,7 @@ const compareOption = computed<EChartsOption>(() => ({
   </ChartCard>
 
   <ChartCard
+    topic="dette"
     title="La France face à ses voisins"
     subtitle="Dette publique en % du PIB"
     question="Que propose le programme pour réduire la dette publique par rapport au PIB ?"

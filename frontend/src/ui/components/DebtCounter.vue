@@ -3,7 +3,11 @@ import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 import { formatQuarter } from "@domain/economy";
 import type { DebtProjection } from "@domain/economy";
 
-const props = defineProps<{ projection: DebtProjection }>();
+const props = defineProps<{
+  projection: DebtProjection;
+  /** Population de la France : permet d'afficher la dette par habitant. */
+  population?: { year: number; value: number } | null;
+}>();
 
 const nf = new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 0 });
 const nf1 = new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 1 });
@@ -38,6 +42,9 @@ const approxBillions = computed(() => nf.format(Math.round(value.value / 1e9)));
 const perSecond = computed(() => nf.format(Math.round(props.projection.perMs * 1000)));
 const perYearBn = computed(() => nf.format(Math.round(props.projection.perYear / 1e9)));
 const lastBn = computed(() => nf.format(Math.round(props.projection.lastValue / 1e9)));
+const perCapita = computed(() =>
+  props.population ? nf.format(Math.round(value.value / props.population.value)) : null,
+);
 const pct = computed(() =>
   props.projection.lastPctGdp === null ? null : nf1.format(props.projection.lastPctGdp),
 );
@@ -52,6 +59,11 @@ const pct = computed(() =>
     </p>
     <p class="rate" aria-hidden="true">
       <span class="plus">+ {{ perSecond }} €</span> par seconde
+    </p>
+
+    <p v-if="perCapita && population" class="capita" aria-hidden="true">
+      soit environ <strong>{{ perCapita }} €</strong> par habitant
+      <span class="capita-note">(population au 1er janvier {{ population.year }})</span>
     </p>
 
     <p class="note">
@@ -104,6 +116,25 @@ const pct = computed(() =>
   font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.78);
   font-variant-numeric: tabular-nums;
+}
+
+.capita {
+  margin: 0.7rem 0 0;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-variant-numeric: tabular-nums;
+}
+
+.capita strong {
+  color: var(--gold);
+  font-size: 1.25rem;
+}
+
+.capita-note {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .plus {

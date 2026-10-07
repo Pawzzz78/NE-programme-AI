@@ -1,5 +1,5 @@
 import { getInstanceByDom, init } from "echarts/core";
-import { sourceDomain, type ChartImageSpec } from "@domain/chartExport";
+import { sourceShort, type ChartImageSpec } from "@domain/chartExport";
 import {
   GOLD,
   NAVY,
@@ -12,14 +12,19 @@ import {
   loadFonts,
   roundRect,
   setSpacing,
+  wrap,
   type Ctx,
 } from "./canvasKit";
 
 const WIDTH = 1200;
-const PAD = 48;
+const PAD = 56;
 const SCALE = 2;
 const BAND = 84;
-const FOOTER = 132;
+const INNER = WIDTH - PAD * 2;
+
+const CREAM = "#f4f1e8";
+const MUTED = "#5c648a";
+const GOLD_DARK = "#7a6f4a";
 
 /** Taille de rendu du graphique exporté (px CSS) : identique quel que soit l'écran. */
 const EXPORT_WIDTH = 720;
@@ -82,6 +87,17 @@ export async function captureChart(root: HTMLElement): Promise<CapturedChart> {
   }
 }
 
+/** Plus grande taille (60 → 36 px) qui tient en `maxLines` lignes. */
+function fitHeadline(ctx: Ctx, text: string, maxWidth: number, maxLines: number) {
+  for (let size = 60; size >= 36; size -= 2) {
+    ctx.font = font(800, size);
+    const lines = wrap(ctx, text, maxWidth);
+    if (lines.length <= maxLines) return { size, lines };
+  }
+  ctx.font = font(800, 36);
+  return { size: 36, lines: clampLines(ctx, text, maxWidth, maxLines) };
+}
+
 function drawHeader(ctx: Ctx) {
   ctx.fillStyle = NAVY_DEEP;
   ctx.fillRect(0, 0, WIDTH, BAND);
@@ -93,62 +109,32 @@ function drawHeader(ctx: Ctx) {
   ctx.font = font(800, 24);
   setSpacing(ctx, 1.5);
   ctx.fillStyle = "#ffffff";
-  ctx.fillText("PROGRAMME DAVID LISNARD", PAD + 72, (BAND - 4) / 2);
-  setSpacing(ctx, 0);
+  ctx.fillText("LA FRANCE EN CHIFFRES", PAD + 72, (BAND - 4) / 2);
 
   ctx.font = font(700, 18);
   setSpacing(ctx, 2.4);
   ctx.fillStyle = GOLD;
   ctx.textAlign = "right";
-  ctx.fillText("LES CHIFFRES", WIDTH - PAD, (BAND - 4) / 2);
+  ctx.fillText("DONNÉES PUBLIQUES", WIDTH - PAD, (BAND - 4) / 2);
   ctx.textAlign = "left";
   ctx.textBaseline = "alphabetic";
   setSpacing(ctx, 0);
 }
 
-function drawFooter(ctx: Ctx, spec: ChartImageSpec, top: number, height: number) {
-  ctx.fillStyle = "#f4f5f9";
+function navyBackground(ctx: Ctx, top: number, height: number) {
+  const bg = ctx.createLinearGradient(0, top, 0, top + height);
+  bg.addColorStop(0, NAVY);
+  bg.addColorStop(1, NAVY_DEEP);
+  ctx.fillStyle = bg;
   ctx.fillRect(0, top, WIDTH, height);
-  ctx.fillStyle = "rgba(181, 169, 129, 0.6)";
-  ctx.fillRect(PAD, top, WIDTH - PAD * 2, 2);
 
-  // Pastille du site : ramène le lecteur vers les chiffres et le programme
-  const cta = `${spec.siteHost}/#/economie`;
-  ctx.font = font(800, 21);
-  const ctaWidth = Math.min(ctx.measureText(cta).width + 52, 460);
-  const ctaX = WIDTH - PAD - ctaWidth;
-  const ctaY = top + 30;
-  roundRect(ctx, ctaX, ctaY, ctaWidth, 52, 26);
-  ctx.fillStyle = GOLD;
-  ctx.fill();
-  ctx.fillStyle = NAVY;
-  ctx.textBaseline = "middle";
-  ctx.fillText(ellipsize(ctx, cta, ctaWidth - 40), ctaX + 26, ctaY + 26);
-  ctx.textBaseline = "alphabetic";
-
-  const textWidth = ctaX - PAD - 28;
-  ctx.font = font(700, 23);
-  ctx.fillStyle = NAVY;
-  const source = spec.source ? `Source : ${spec.source}` : "Source : données publiques";
-  ctx.fillText(ellipsize(ctx, source, textWidth), PAD, top + 50);
-
-  const domain = sourceDomain(spec.sourceUrl);
-  if (domain) {
-    ctx.font = font(600, 19);
-    ctx.fillStyle = "#5c648a";
-    ctx.fillText(ellipsize(ctx, domain, textWidth), PAD, top + 80);
-  }
-
-  ctx.font = font(500, 14);
-  ctx.fillStyle = "#5c648a";
-  ctx.fillText(
-    "Outil citoyen non officiel · données publiques · les compteurs du site sont des estimations",
-    PAD,
-    top + height - 18,
-  );
+  const glow = ctx.createRadialGradient(180, top, 0, 180, top, 560);
+  glow.addColorStop(0, "rgba(181, 169, 129, 0.22)");
+  glow.addColorStop(1, "rgba(181, 169, 129, 0)");
+  ctx.fillStyle = glow;
+  ctx.fillRect(0, top, WIDTH, height);
 }
 
-/** Compose l'image : bandeau, titre, graphique, source (Eurostat…) et adresse du site. */
 export async function renderChartImage(
   spec: ChartImageSpec,
   chart: CapturedChart,
@@ -157,17 +143,31 @@ export async function renderChartImage(
 
   const probe = document.createElement("canvas").getContext("2d");
   if (!probe) throw new Error("Canvas indisponible dans ce navigateur.");
-  const innerWidth = WIDTH - PAD * 2;
+  const promo = spec.promo;
 
-  probe.font = font(800, 34);
-  const titleLines = clampLines(probe, spec.title.toUpperCase(), innerWidth, 2);
-  probe.font = font(500, 21);
-  const subLines = spec.subtitle ? clampLines(probe, spec.subtitle, innerWidth, 2) : [];
+  // --- Mesures -------------------------------------------------------------------
+  const HERO_PAD = 40;
+  const hero = promo ? fitHeadline(probe, promo.headline.toUpperCase(), INNER - 30, 2) : null;
+  const heroHeight = hero ? HERO_PAD * 2 + hero.lines.length * Math.round(hero.size * 1.14) : 0;
 
-  const titleBlock = 34 + titleLines.length * 42 + (subLines.length ? 8 + subLines.length * 28 : 0) + 22;
-  const chartHeight = Math.round((chart.height * innerWidth) / chart.width);
-  const height = BAND + titleBlock + chartHeight + 24 + FOOTER;
+  probe.font = font(800, 32);
+  const titleLines = clampLines(probe, spec.title.toUpperCase(), INNER, 2);
+  probe.font = font(500, 20);
+  const subLines = spec.subtitle ? clampLines(probe, spec.subtitle, INNER, 2) : [];
+  const titleBlock = 34 + titleLines.length * 40 + (subLines.length ? 6 + subLines.length * 27 : 0) + 22;
+  const chartHeight = Math.round((chart.height * INNER) / chart.width);
 
+  probe.font = font(600, 25);
+  const quoteLines = promo ? clampLines(probe, `« ${promo.quote} »`, INNER - 36, 6) : [];
+  const QUOTE_LH = 36;
+  const quoteHeight = promo ? 106 + quoteLines.length * QUOTE_LH : 0;
+
+  const CTA_HEIGHT = 178;
+  const FOOT_HEIGHT = 84;
+  const height =
+    BAND + heroHeight + titleBlock + chartHeight + 28 + quoteHeight + CTA_HEIGHT + FOOT_HEIGHT;
+
+  // --- Dessin --------------------------------------------------------------------
   const canvas = document.createElement("canvas");
   canvas.width = WIDTH * SCALE;
   canvas.height = height * SCALE;
@@ -178,43 +178,122 @@ export async function renderChartImage(
   ctx.fillStyle = "#ffffff";
   ctx.fillRect(0, 0, WIDTH, height);
   drawHeader(ctx);
+  let y = BAND;
 
-  let y = BAND + 34;
-  ctx.font = font(800, 34);
+  // Slogan
+  if (promo && hero) {
+    navyBackground(ctx, y, heroHeight);
+    ctx.fillStyle = GOLD;
+    ctx.fillRect(PAD, y + HERO_PAD, 8, heroHeight - HERO_PAD * 2);
+    ctx.fillStyle = "#ffffff";
+    ctx.font = font(800, hero.size);
+    const lh = Math.round(hero.size * 1.14);
+    let ty = y + HERO_PAD + hero.size * 0.86;
+    for (const line of hero.lines) {
+      ctx.fillText(line, PAD + 30, ty);
+      ty += lh;
+    }
+    y += heroHeight;
+  }
+
+  // Titre du graphique
+  y += 34;
+  ctx.font = font(800, 32);
   ctx.fillStyle = NAVY;
-  setSpacing(ctx, 0.5);
   for (const line of titleLines) {
-    y += 34;
+    y += 32;
     ctx.fillText(line, PAD, y);
     y += 8;
   }
-  setSpacing(ctx, 0);
   if (subLines.length) {
-    ctx.font = font(500, 21);
-    ctx.fillStyle = "#5c648a";
-    y += 4;
+    ctx.font = font(500, 20);
+    ctx.fillStyle = MUTED;
+    y += 6;
     for (const line of subLines) {
-      y += 24;
+      y += 22;
       ctx.fillText(line, PAD, y);
-      y += 4;
+      y += 5;
     }
   }
   y += 22;
 
-  // Le bitmap capturé fait `ratio` × la taille CSS ; on n'en garde que la zone utile.
+  // Graphique : le bitmap capturé fait `ratio` × la taille CSS
   const ratio = chart.image.naturalWidth / chart.width;
-  ctx.drawImage(
-    chart.image,
-    0,
-    0,
-    chart.width * ratio,
-    chart.height * ratio,
-    PAD,
-    y,
-    innerWidth,
-    chartHeight,
-  );
+  ctx.drawImage(chart.image, 0, 0, chart.width * ratio, chart.height * ratio, PAD, y, INNER, chartHeight);
+  y += chartHeight + 28;
 
-  drawFooter(ctx, spec, height - FOOTER, FOOTER);
+  // Citation exacte du programme
+  if (promo) {
+    ctx.fillStyle = CREAM;
+    ctx.fillRect(0, y, WIDTH, quoteHeight);
+    ctx.fillStyle = GOLD;
+    ctx.fillRect(PAD, y + 30, 5, quoteLines.length * QUOTE_LH + 8);
+
+    let qy = y + 38 + 24;
+    ctx.font = font(600, 25);
+    ctx.fillStyle = NAVY;
+    for (const line of quoteLines) {
+      ctx.fillText(line, PAD + 28, qy);
+      qy += QUOTE_LH;
+    }
+    qy += 4;
+    ctx.font = font(800, 18);
+    ctx.fillStyle = GOLD_DARK;
+    ctx.fillText(ellipsize(ctx, `Extrait du programme · ${promo.sourceTitle}`, INNER - 28), PAD + 28, qy + 6);
+    y += quoteHeight;
+  }
+
+  // Appel à l'engagement
+  navyBackground(ctx, y, CTA_HEIGHT);
+  ctx.fillStyle = GOLD;
+  ctx.fillRect(0, y, WIDTH, 4);
+
+  const pillText = "Agir  →";
+  ctx.font = font(800, 28);
+  const pillW = Math.min(ctx.measureText(pillText).width + 76, 330);
+  const pillX = WIDTH - PAD - pillW;
+  const pillY = y + 44;
+  roundRect(ctx, pillX, pillY, pillW, 64, 32);
+  ctx.fillStyle = GOLD;
+  ctx.fill();
+  ctx.fillStyle = NAVY;
+  ctx.textBaseline = "middle";
+  ctx.textAlign = "center";
+  ctx.fillText(ellipsize(ctx, pillText, pillW - 30), pillX + pillW / 2, pillY + 33);
+  ctx.textAlign = "left";
+  ctx.textBaseline = "alphabetic";
+  ctx.font = font(600, 16);
+  ctx.fillStyle = "rgba(255, 255, 255, 0.85)";
+  ctx.textAlign = "right";
+  ctx.fillText(spec.siteHost, WIDTH - PAD, pillY + 98);
+  ctx.textAlign = "left";
+
+  const textW = pillX - PAD - 30;
+  ctx.font = font(800, 38);
+  ctx.fillStyle = "#ffffff";
+  const ctaTitle = clampLines(ctx, "Engagez-vous", textW, 2);
+  let cy = y + 74;
+  for (const line of ctaTitle) {
+    ctx.fillText(line, PAD, cy);
+    cy += 44;
+  }
+  ctx.font = font(500, 21);
+  ctx.fillStyle = "rgba(255, 255, 255, 0.82)";
+  ctx.fillText(ellipsize(ctx, "Informez-vous sur le programme, posez vos questions, passez à l’action.", textW), PAD, cy - 4);
+  y += CTA_HEIGHT;
+
+  // Pied : source discrète et mention citoyenne
+  ctx.fillStyle = "#eef0f7";
+  ctx.fillRect(0, y, WIDTH, FOOT_HEIGHT);
+  ctx.font = font(600, 16);
+  ctx.fillStyle = MUTED;
+  const source = sourceShort(spec.source);
+  ctx.fillText(source ? `Source : ${source}` : "Source : données publiques", PAD, y + 34);
+  ctx.font = font(500, 13);
+  ctx.fillText("Visuel citoyen non officiel · données publiques", PAD, y + 58);
+  ctx.textAlign = "right";
+  ctx.fillText(`${spec.siteHost}/#/economie`, WIDTH - PAD, y + 58);
+  ctx.textAlign = "left";
+
   return canvasToPng(canvas);
 }

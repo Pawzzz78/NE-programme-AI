@@ -45,6 +45,11 @@ COFOG = {
 }
 COFOG_OLD_AGE = "GF1002"
 
+# Postes de gov_10a_main : dépenses totales, prestations sociales (espèces / nature), intérêts de
+# la dette, solde (B9), recettes totales, impôts sur la production et les importations, impôts
+# courants sur le revenu et le patrimoine, cotisations sociales.
+MAIN_ITEMS = ["TE", "D62PAY", "D632PAY", "D41PAY", "B9", "TR", "D2REC", "D5REC", "D61REC"]
+
 
 def fetch_json(dataset: str, params: list[tuple[str, str]]) -> dict:
     query = "&".join(f"{k}={v}" for k, v in [("format", "JSON"), ("lang", "FR"), *params])
@@ -98,6 +103,15 @@ def fetch_debt() -> dict:
     compare = {g: series(data, {"unit": "PC_GDP", "geo": g}, times) for g in GEOS}
     end = end_index(fr_eur)
     print(f"Dette : {times[0]} -> {times[end - 1]}, {fr_eur[end - 1]:,.0f} M EUR")
+
+    # Population au 1er janvier : sert à la dette par habitant
+    pop = fetch_json(
+        "demo_pjan", [("geo", "FR"), ("sex", "T"), ("age", "TOTAL"), ("unit", "NR")]
+    )
+    pop_years = times_of(pop)
+    pop_values = series(pop, {}, pop_years)
+    pend = end_index(pop_values)
+    print(f"Population : {pop_years[pend - 1]} = {pop_values[pend - 1]:,.0f}")
     return {
         "source": "Eurostat",
         "dataset": "gov_10q_ggdebt",
@@ -107,13 +121,59 @@ def fetch_debt() -> dict:
         "quarters": times[:end],
         "france": {"eur_millions": fr_eur[:end], "pct_gdp": fr_pct[:end]},
         "compare_pct_gdp": {g: v[:end] for g, v in compare.items()},
+        "population": {"years": pop_years[:pend], "values": pop_values[:pend]},
+    }
+
+
+def fetch_rates() -> dict:
+    """Taux des obligations d'État à 10 ans (moyennes mensuelles) : OAT pour la France."""
+    geos = ["FR", "DE", "IT", "ES"]
+    data = fetch_json(
+        "irt_lt_mcby_m", [("int_rt", "MCBY")] + [("geo", g) for g in geos]
+    )
+    months = times_of(data)
+    by_geo = {g: series(data, {"geo": g}, months) for g in geos}
+    end = end_index(by_geo["FR"])
+    print(f"Taux 10 ans : {months[0]} -> {months[end - 1]}, FR {by_geo['FR'][end - 1]} %")
+    return {
+        "source": "Eurostat",
+        "dataset": "irt_lt_mcby_m",
+        "source_url": BROWSER.format("irt_lt_mcby_m"),
+        "definition": "Rendement des obligations d'État à 10 ans (taux dit de convergence), "
+        "moyenne mensuelle",
+        "eurostat_updated": data.get("updated"),
+        "months": months[:end],
+        "france": by_geo["FR"][:end],
+        "compare": {g: v[:end] for g, v in by_geo.items() if g != "FR"},
+    }
+
+
+def fetch_eu_pct_gdp(na_item: str) -> dict:
+    """Un poste de gov_10a_main en % du PIB pour les pays de l'UE27 et la moyenne UE27."""
+    codes = EU27 + ["EU27_2020"]
+    data = fetch_json(
+        "gov_10a_main",
+        [("sector", "S13"), ("na_item", na_item), ("unit", "PC_GDP")]
+        + [("geo", g) for g in codes],
+    )
+    years = times_of(data)
+    labels = data["dimension"]["geo"]["category"]["label"]
+    values = {g: series(data, {"geo": g}, years) for g in codes}
+    end = end_index(values["FR"])
+    return {
+        "years": years[:end],
+        "eu27": values["EU27_2020"][:end],
+        "countries": [
+            {"code": g, "label": labels[g], "pct_gdp": values[g][:end]} for g in EU27
+        ],
     }
 
 
 def fetch_spending() -> dict:
     main = fetch_json(
         "gov_10a_main",
-        [("sector", "S13"), ("na_item", "TE"), ("na_item", "D62PAY"), ("na_item", "D632PAY")]
+        [("sector", "S13")]
+        + [("na_item", i) for i in MAIN_ITEMS]
         + [("geo", g) for g in GEOS]
         + [("unit", "MIO_EUR"), ("unit", "PC_GDP")],
     )
@@ -128,17 +188,9 @@ def fetch_spending() -> dict:
         g: series(main, {"na_item": "TE", "unit": "PC_GDP", "geo": g}, years)[:end] for g in GEOS
     }
 
-    eu = fetch_json(
-        "gov_10a_main",
-        [("sector", "S13"), ("na_item", "TE"), ("unit", "PC_GDP")]
-        + [("geo", g) for g in EU27 + ["EU27_2020"]],
-    )
-    eu_years = times_of(eu)
-    eu_labels = eu["dimension"]["geo"]["category"]["label"]
-    eu_series = {
-        g: series(eu, {"geo": g}, eu_years) for g in EU27 + ["EU27_2020"]
-    }
-    eu_end = end_index(eu_series["FR"])
+    eu_spending = fetch_eu_pct_gdp("TE")
+    eu_deficit = fetch_eu_pct_gdp("B9")
+    eu_years = eu_spending["years"]
 
     cofog_codes = list(COFOG) + [COFOG_OLD_AGE, "TOTAL"]
     exp = fetch_json(
@@ -165,15 +217,17 @@ def fetch_spending() -> dict:
         "total_pct_gdp": fr("TE", "PC_GDP")[:end],
         "social_cash_eur_m": fr("D62PAY")[:end],
         "social_inkind_eur_m": fr("D632PAY")[:end],
+        "interest_eur_m": fr("D41PAY")[:end],
+        "interest_pct_gdp": fr("D41PAY", "PC_GDP")[:end],
+        "balance_eur_m": fr("B9")[:end],
+        "balance_pct_gdp": fr("B9", "PC_GDP")[:end],
+        "revenue_pct_gdp": fr("TR", "PC_GDP")[:end],
+        "tax_production_pct_gdp": fr("D2REC", "PC_GDP")[:end],
+        "tax_income_pct_gdp": fr("D5REC", "PC_GDP")[:end],
+        "social_contrib_pct_gdp": fr("D61REC", "PC_GDP")[:end],
         "compare_pct_gdp": compare,
-        "eu_compare": {
-            "years": eu_years[:eu_end],
-            "eu27": eu_series["EU27_2020"][:eu_end],
-            "countries": [
-                {"code": g, "label": eu_labels[g], "pct_gdp": eu_series[g][:eu_end]}
-                for g in EU27
-            ],
-        },
+        "eu_compare": eu_spending,
+        "eu_deficit": eu_deficit,
         "cofog": {
             "years": cofog_years[:cend],
             "total_eur_m": cofog_series["TOTAL"][:cend],
@@ -191,6 +245,7 @@ def main() -> None:
     result = fetch_debt()
     result["fetched_at"] = datetime.now(timezone.utc).isoformat()
     result["depenses"] = fetch_spending()
+    result["taux"] = fetch_rates()
     OUT_PATH.write_text(json.dumps(result, ensure_ascii=False), encoding="utf-8")
     print(f"OK -> {OUT_PATH}")
 

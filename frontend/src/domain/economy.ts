@@ -15,6 +15,29 @@ export interface DebtData {
   };
   /** Dette en % du PIB par pays (FR, DE, IT, ES, EA20). */
   comparePctGdp: Record<string, (number | null)[]>;
+  /** Population de la France au 1er janvier de chaque année. */
+  population: { years: string[]; values: (number | null)[] };
+}
+
+/** Taux des obligations d'État à 10 ans (OAT pour la France), moyennes mensuelles. */
+export interface RatesData {
+  source: string;
+  dataset: string;
+  sourceUrl: string;
+  definition: string;
+  eurostatUpdated: string | null;
+  /** Mois au format « 2026-08 ». */
+  months: string[];
+  france: (number | null)[];
+  /** Allemagne, Italie, Espagne. */
+  compare: Record<string, (number | null)[]>;
+}
+
+/** Un indicateur en % du PIB pour les pays de l'UE27 et leur moyenne. */
+export interface EuRanking {
+  years: string[];
+  eu27: (number | null)[];
+  countries: { code: string; label: string; pctGdp: (number | null)[] }[];
 }
 
 export interface CofogFunction {
@@ -35,12 +58,21 @@ export interface SpendingData {
   socialInKindEurMillions: (number | null)[];
   /** Dépenses totales en % du PIB par pays (FR, DE, IT, ES, EA20). */
   comparePctGdp: Record<string, (number | null)[]>;
+  /** Intérêts payés sur la dette. */
+  interestEurMillions: (number | null)[];
+  interestPctGdp: (number | null)[];
+  /** Solde public (négatif = déficit). */
+  balanceEurMillions: (number | null)[];
+  balancePctGdp: (number | null)[];
+  /** Recettes, en % du PIB. */
+  revenuePctGdp: (number | null)[];
+  taxProductionPctGdp: (number | null)[];
+  taxIncomePctGdp: (number | null)[];
+  socialContribPctGdp: (number | null)[];
   /** Dépenses totales en % du PIB, pays de l'UE27 et moyenne UE27. */
-  euCompare: {
-    years: string[];
-    eu27: (number | null)[];
-    countries: { code: string; label: string; pctGdp: (number | null)[] }[];
-  };
+  euCompare: EuRanking;
+  /** Solde public en % du PIB, pays de l'UE27 et moyenne UE27. */
+  euDeficit: EuRanking;
   cofog: {
     years: string[];
     totalEurMillions: (number | null)[];
@@ -163,4 +195,25 @@ export function addSeries(
   b: (number | null)[],
 ): (number | null)[] {
   return a.map((v, i) => (v === null || b[i] === null ? null : v + (b[i] as number)));
+}
+
+/** Dernière population connue (au 1er janvier) et son année. */
+export function latestPopulation(data: DebtData): { year: number; value: number } | null {
+  const { years, values } = data.population;
+  for (let i = values.length - 1; i >= 0; i--) {
+    const v = values[i];
+    if (v !== null) return { year: Number(years[i]), value: v };
+  }
+  return null;
+}
+
+/** Écart, en points, entre deux séries de taux (a − b) ; `null` si l'une manque. */
+export function spread(a: (number | null)[], b: (number | null)[]): (number | null)[] {
+  return a.map((v, i) => (v === null || b[i] === null ? null : Math.round((v - (b[i] as number)) * 1000) / 1000));
+}
+
+/** Mois « 2026-08 » → ms epoch (1er du mois, UTC). */
+export function monthStart(month: string): number {
+  const [year, m] = month.split("-").map(Number);
+  return Date.UTC(year, m - 1, 1);
 }

@@ -1,4 +1,4 @@
-import type { DebtData, SpendingData } from "./economy";
+import type { DebtData, RatesData, SpendingData } from "./economy";
 import type { ChatResult, CorpusHealth, SearchResult } from "./models";
 
 /** Port sortant : accès au programme (implémenté par l'infra HTTP). */
@@ -11,5 +11,6 @@ export interface ProgrammeRepository {
 /** Port sortant : données économiques (implémenté par l'infra HTTP). */
 export interface EconomyRepository {
   getDebt(): Promise<DebtData>;
+  getRates(): Promise<RatesData>;
   getSpending(): Promise<SpendingData>;
 }

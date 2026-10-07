@@ -192,7 +192,19 @@ def _load_economie() -> dict:
 def economie_dette() -> dict:
     data = _load_economie()
     data.pop("depenses", None)
+    data.pop("taux", None)
     return data
+
+
+@app.get("/api/economie/taux")
+def economie_taux() -> dict:
+    rates = _load_economie().get("taux")
+    if rates is None:
+        raise HTTPException(
+            status_code=503,
+            detail="Données de taux absentes. Relancez `python scripts/fetch_eurostat.py`.",
+        )
+    return rates
 
 
 @app.get("/api/economie/depenses")

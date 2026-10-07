@@ -49,7 +49,8 @@ defineProps<{
         <p class="eyebrow">Les chiffres</p>
         <h1>L’économie de la France en données</h1>
         <p class="lede">
-          Dette publique et comparaisons européennes, à partir des données ouvertes d’Eurostat.
+          Dette, taux de l’OAT, déficit, dépenses et protection sociale : les chiffres clés, à partir
+          des données ouvertes d’Eurostat.
         </p>
       </div>
     </section>

@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useChartExport } from "@app/useChartExport";
+import { CHART_PROMOS, type ChartTopic } from "@domain/chartPromo";
 
 const props = defineProps<{
   title: string;
+  /** Thème du graphique : choisit le slogan et la citation du programme sur l'image exportée. */
+  topic?: ChartTopic;
   subtitle?: string;
   source?: string;
   sourceUrl?: string;
@@ -15,6 +18,7 @@ const root = ref<HTMLElement | null>(null);
 const { exporting, status, fallbackLink, exportImage, shareOnX } = useChartExport(root, () => ({
   title: props.title,
   subtitle: props.subtitle,
+  promo: props.topic ? CHART_PROMOS[props.topic] : undefined,
   source: props.source,
   sourceUrl: props.sourceUrl,
 }));

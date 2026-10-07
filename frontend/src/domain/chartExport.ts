@@ -1,15 +1,23 @@
 /** Règles de l'image exportée d'un graphique — fonctions pures, sans DOM. */
+import type { ChartPromo } from "./chartPromo";
 import { HASHTAG, truncate } from "./shareCard";
 
 export interface ChartImageSpec {
   title: string;
   subtitle?: string;
+  /** Slogan et citation du programme affichés sur l'image. */
+  promo?: ChartPromo;
   /** Libellé de la source, ex. « Eurostat (gov_10a_main) ». */
   source?: string;
   /** Lien vers le jeu de données d'origine. */
   sourceUrl?: string;
   /** Hôte de ce site, affiché sur l'image pour y ramener le lecteur. */
   siteHost: string;
+}
+
+/** « Eurostat (gov_10a_main) » → « Eurostat » : on retire le nom technique du jeu de données. */
+export function sourceShort(source: string | undefined): string {
+  return (source ?? "").replace(/\s*\([^)]*\)\s*$/, "").trim();
 }
 
 /** Hôte + premier segment du chemin, ex. « ec.europa.eu/eurostat ». */
@@ -50,7 +58,7 @@ export function buildChartPostText(
   url: string,
 ): string {
   const tail = [
-    spec.source ? `Source : ${spec.source}` : "Source : données publiques",
+    spec.source ? `Source : ${sourceShort(spec.source)}` : "Source : données publiques",
     url,
     HASHTAG,
   ].join("\n\n");
