@@ -275,6 +275,25 @@ h1 {
     display: none;
   }
 
+  /* Les onglets passent sous la marque au lieu de déborder de l'écran */
+  .nav-inner {
+    flex-wrap: wrap;
+  }
+
+  .brand-text span {
+    display: none;
+  }
+
+  .nav-links {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .nav-links a {
+    flex: 1;
+    text-align: center;
+  }
+
   h1 {
     max-width: none;
   }
